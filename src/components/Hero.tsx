@@ -9,11 +9,15 @@ export default function Hero() {
           <p className="p-8 text-xl">#TomasContraDuchenne</p>
           <div className="align-middle px-8" style={{ paddingTop: '18%' }}>
             <span className="text-5xl">Mi nombre es <span className="font-bold">Tomás</span>.</span>
-            <h1 className="text-2xl mt-3">Necesito tu ayuda para costear el <span className="font-bold">medicamento más caro del mundo</span>.</h1>
-            <button className="mt-5 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                Conoce mi historia
-              </span>
+            <h1 className="text-2xl mt-3 leading-9">Necesito tu ayuda para costear el <span className="font-bold">medicamento más caro del mundo</span>.</h1>
+            <button className="pt-5">
+              <div className="text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800">
+                <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1v12m0 0 4-4m-4 4L1 9"/>
+                </svg>
+                <span className="sr-only">Icon description</span>
+              </div>
+              <span className="text-xl underline font-bold tracking-wide leading-5 text-teal-600">Conoce mi historia&nbsp;</span>
             </button>
           </div>
         </div>
