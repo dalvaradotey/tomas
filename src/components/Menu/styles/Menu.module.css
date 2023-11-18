@@ -1,0 +1,15 @@
+.nav {
+	@apply flex flex-col fixed top-0 left-0 w-full h-full z-10 bg-white pt-4;
+
+	& li {
+		@apply text-center font-light p-4;
+	}
+
+	@media screen(md) {
+		@apply static w-auto h-auto grid grid-cols-5 pt-0;
+
+		& li {
+			@apply p-0;
+		}
+	}
+}
