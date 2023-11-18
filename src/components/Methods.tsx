@@ -1,6 +1,6 @@
 export default function Methods() {
   return (
-    <div className="px-8 py-24 md:px-36 h-screen text-neutral-700">
+    <div id="donar" className="px-8 py-24 md:px-36 h-screen text-neutral-700">
       <h2 className="text-5xl font-semibold text-center">¿Cómo donar?</h2>
       <p className="text-center text-2xl my-5">Puedes donar utilizando cualquiera de estos métodos:</p>
       <div className="flex justify-center py-5">

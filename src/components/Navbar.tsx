@@ -1,13 +1,14 @@
 'use client';
 
 import Link from "next/link";
+import LanguageSwitch from "./LanguageSwitch";
 import Title from "./Title";
 
 export default function Navbar () {
   return (
-    <nav className="flex justify-center p-4">
+    <nav className="flex justify-center p-4 mt-4">
       <Title />
-      <ul className="grid grid-cols-4">
+      <ul className="grid grid-cols-5">
         <li className="text-center font-light">
           <Link href="/">Inicio</Link>
         </li>
@@ -17,8 +18,13 @@ export default function Navbar () {
         <li className="text-center font-light">
           <Link href="/testimonios">Testimonios</Link>
         </li>
+				<li className="text-center font-light">
+          <Link href="/#donar">¿Cómo donar?</Link>
+        </li>
         <li className="text-center font-light">
-          <Link href="/">Lang</Link>
+          <Link href="/">
+            <LanguageSwitch />
+          </Link>
         </li>
       </ul>
     </nav>
