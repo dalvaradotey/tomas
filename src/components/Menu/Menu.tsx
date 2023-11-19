@@ -14,13 +14,13 @@ const Menu: FC<Props> = ({ onClose, className, ...rest }) => {
 		<div className={clsx([styles.nav, className])} {...rest}>
 			<ul role="menu" className={styles.menu}>
 				<li>
-					<Link onClick={onClose} href="/">Inicio</Link>
+					<Link onClick={onClose} className="underline decoration-pink-500 underline-offset-8 decoration-4" href="/">Inicio</Link>
 				</li>
 				<li>
 					<Link onClick={onClose} href="/duchenne">¿Qué es duchenne?</Link>
 				</li>
 				<li>
-					<Link onClick={onClose} href="/testimonios">Testimonios</Link>
+					<Link onClick={onClose} href="/testimonios">Testimonio</Link>
 				</li>
 				<li>
 					<Link onClick={onClose} href="/#donar">¿Cómo donar?</Link>
