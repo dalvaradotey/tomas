@@ -5,8 +5,8 @@ import WebPay from '../../public/webpay.png'
 
 export default function Methods() {
   return (
-    <div id="donar" className="px-8 md:py-24 md:px-28 text-neutral-700">
-      <h2 className="text-3xl md:text-5xl font-semibold text-center">¿Cómo <span className="underline decoration-pink-500 underline-offset-8 md:decoration-8 decoration-4 font-bold">donar</span>?</h2>
+    <div id="donar" className="px-8 py-20 md:py-24 md:px-28 text-neutral-700">
+      <h2 className="text-3xl md:text-5xl font-semibold text-center">¿Cómo donar?</h2>
       <p className="text-center text-xl md:text-2xl my-5">Puedes donar utilizando cualquiera de estos métodos:</p>
       <div className="md:flex justify-center py-5">
         <a href="?showDialog=y">

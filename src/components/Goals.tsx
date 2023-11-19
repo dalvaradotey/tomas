@@ -1,25 +1,17 @@
+import CurrentGoalSection from "./CurrentGoalSection";
+
 export default function Goals() {
   return (
-    <div className="md:flex px-8 md:py-24 md:px-28 text-neutral-700">
+    <div className="md:flex bg-green-50 px-8 md:py-24 md:px-36 text-neutral-700">
       <div className="md:w-2/5">
-        <h2 className="text-5xl font-semibold">Nuestra meta</h2>
-        <p className="text-2xl my-5">Muchas gracias a todos</p>
+        <div className="py-10 px-5 rounded-2xl">
+          <h2 className="text-xl md:text-2xl font-normal text-green-700 mb-1">Camino a la meta 🏁</h2>
+          <p className="text-2xl md:text-4xl text-green-800 font-semibold italic">&ldquo;<span className="text-green-800">Si 1 millón de personas donan CLP$ 3.500 llegamos a la meta.</span>&rdquo;</p>
+        </div>
       </div>
-      <div className="md:w-3/5">
-        <div className="md:flex">
-          <div className="rounded-full bg-teal-200 px-4 py-6">
-            <span className="text-5xl font-bold">1%</span>
-          </div>
-          <div className="px-10">
-            <p>Meta final: $3.500.000.000</p>
-            <p>Monto actual: $39.880.440</p>
-          </div>
-        </div>
-        <div className="flex justify-center py-5">
-          <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
-            <div className="h-6 bg-blue-600 rounded-full dark:bg-blue-500" style={{ width: '1%' }}></div>
-          </div>
-        </div>
+      <div className="md:w-3/5 md:px-20 md:py-8">
+        <h3 className="text-2xl font-normal md:mb-5 mb-3 text-green-700 text-center md:text-left">¿Cómo vamos?</h3>
+        <CurrentGoalSection />
       </div>
     </div>
   )
