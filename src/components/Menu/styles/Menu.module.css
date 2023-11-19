@@ -1,8 +1,8 @@
 .nav {
-	@apply fixed top-0 left-0 w-full h-full z-10 bg-white pt-4;
+	@apply fixed top-0 left-0 w-full h-full z-10 pt-4 text-cyan-800;
 
 	& li {
-		@apply text-center font-light p-4;
+		@apply text-center text-lg font-medium p-4;
 	}
 
 	& .menu {

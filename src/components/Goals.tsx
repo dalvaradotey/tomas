@@ -1,12 +1,12 @@
 export default function Goals() {
   return (
-    <div id="donar" className="flex px-8 py-24 md:px-28 h-screen text-neutral-700">
-      <div className="w-2/5">
+    <div className="md:flex px-8 md:py-24 md:px-28 text-neutral-700">
+      <div className="md:w-2/5">
         <h2 className="text-5xl font-semibold">Nuestra meta</h2>
         <p className="text-2xl my-5">Muchas gracias a todos</p>
       </div>
-      <div className="w-3/5">
-        <div className="flex">
+      <div className="md:w-3/5">
+        <div className="md:flex">
           <div className="rounded-full bg-teal-200 px-4 py-6">
             <span className="text-5xl font-bold">1%</span>
           </div>
