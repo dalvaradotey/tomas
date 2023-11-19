@@ -1689,6 +1689,13 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
+next-elfsight-widget@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/next-elfsight-widget/-/next-elfsight-widget-1.1.1.tgz#2acd653f6312ffa64d6af2dd53ad0a133fd5a1fb"
+  integrity sha512-n/vrSq6mfvX5oCaExLrvlXC9eFb7Je5glcy53teBqAp0ouBYydxyTQRB/X50jERgTvuRiQ6clDCFN3KTnKsnZw==
+  dependencies:
+    react-elfsight-widget "^1.1.1"
+
 next@14.0.2:
   version "14.0.2"
   resolved "https://registry.yarnpkg.com/next/-/next-14.0.2.tgz#02ba6a1656edf14d3913c7a3553026e9d6e083c7"
@@ -1976,6 +1983,11 @@ react-dom@^18:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-elfsight-widget@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-elfsight-widget/-/react-elfsight-widget-1.1.1.tgz#9bc98f12d316e23aa88b4784c339850aa0b1e50f"
+  integrity sha512-f6r0gC9266yRcNZak8sKev/UwkAP5RYpcEt5X5eeYqHo8agXCQzdYwA0+8HDz5pSPHb0/C54o6oWv+Ukf2GO9w==
 
 react-is@^16.13.1:
   version "16.13.1"
