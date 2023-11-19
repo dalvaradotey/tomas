@@ -15,7 +15,7 @@ export default function Navbar () {
 	}
 
   return (
-    <nav className="flex justify-around md:justify-center p-4 mt-4">
+    <nav className="sticky top-0 flex justify-around md:justify-center p-4 mt-4">
       <Title />
       {isMobile && (
 				<button className="cursor-pointer" onClick={handleMobileMenu}>
