@@ -4,7 +4,7 @@ import AidMethods from "@/components/AidMethods";
 
 export default function Donar() {
   return (
-    <div id="donar" className="px-8 py-20 md:py-24 md:px-28 text-neutral-700">
+    <div id="donar" className="px-8 py-8 md:py-24 md:px-28 text-neutral-700">
       <h2 className="text-3xl md:text-5xl font-semibold text-center">
         ¿Cómo donar?
       </h2>
