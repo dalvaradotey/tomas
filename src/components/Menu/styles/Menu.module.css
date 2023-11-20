@@ -13,7 +13,7 @@
 		@apply static w-auto h-auto pt-0 bg-transparent;
 
 		& .menu {
-			@apply grid grid-cols-3;
+			@apply grid grid-cols-4;
 		}
 
 		& li {
