@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -33,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={clsx(['relative', inter.className])}>
         <Navbar />
         <main className="h-full">
           {children}

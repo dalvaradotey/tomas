@@ -19,8 +19,8 @@
 	}
 
 	&:last-child {
-		& img {
-			@apply w-12 md:w-20;
+		& .image {
+			@apply w-10 md:w-20;
 		}
 	}
 }
