@@ -19,7 +19,7 @@ const Menu: FC<Props> = ({ onClose, className, ...rest }) => {
 				<li>
 					<Link onClick={onClose} href="/duchenne">¿Qué es duchenne?</Link>
 				</li>
-				<li className="hidden">
+				<li>
 					<Link onClick={onClose} href="/testimonios">Testimonio</Link>
 				</li>
 				<li>
