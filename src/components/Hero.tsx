@@ -4,9 +4,9 @@ import VideoGallery from "./VideoGallery";
 export default function Hero() {
   return (
     <div className="bg-cyan-100 md:h-screen text-cyan-900 md:px-16">
-      <div className="rounded-3xl md:flex md:h-full">
+      <div className="rounded-3xl md:flex md:h-full md:items-center">
         <div className="relative md:w-3/5">
-          <div className="align-middle px-8 pt-8 md:pt-40">
+          <div className="align-middle px-8 pt-8 md:pt-0">
             <span className="text-2xl md:text-6xl font-bold">Mi nombre es <span className="underline decoration-cyan-500 underline-offset-8 md:decoration-8 decoration-4">Tomás</span>.</span>
             <h1 className="md:text-3xl text-lg mt-4 md:mt-8 md:leading-9 leading-6">Necesito tu ayuda para costear el medicamento más caro del mundo.</h1>
             <div className="py-5">
@@ -30,7 +30,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="md:w-2/5 relative">
-          <VideoGallery className="mt-20 hidden md:block py-8" />
+          <VideoGallery className="hidden md:block py-8" />
         </div>
       </div>
     </div>
