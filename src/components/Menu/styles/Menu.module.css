@@ -1,8 +1,8 @@
 .nav {
-	@apply bg-cyan-200 fixed top-0 left-0 w-full h-full z-10 pt-4 text-cyan-800;
+	@apply fixed top-0 left-0 w-full h-full z-10 pt-4 bg-white;
 
 	& li {
-		@apply text-center text-lg font-medium p-4;
+		@apply text-center p-4;
 	}
 
 	& .menu {
@@ -10,10 +10,10 @@
 	}
 
 	@media screen(md) {
-		@apply static w-auto h-auto pt-0;
+		@apply static w-auto h-auto pt-0 bg-transparent;
 
 		& .menu {
-			@apply grid grid-cols-5;
+			@apply grid grid-cols-3;
 		}
 
 		& li {

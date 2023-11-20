@@ -19,13 +19,13 @@ const Menu: FC<Props> = ({ onClose, className, ...rest }) => {
 				<li>
 					<Link onClick={onClose} href="/duchenne">¿Qué es duchenne?</Link>
 				</li>
-				<li>
+				<li className="hidden">
 					<Link onClick={onClose} href="/testimonios">Testimonio</Link>
 				</li>
 				<li>
 					<Link onClick={onClose} href="/#donar">¿Cómo donar?</Link>
 				</li>
-				<li className="flex justify-center md:justify-center">
+				<li className="hidden justify-center md:justify-center">
 					<LanguageSwitch onClick={onClose} />
 				</li>
 			</ul>

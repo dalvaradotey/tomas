@@ -1,0 +1,26 @@
+.anchor {
+	@apply w-full p-0 m-0;
+
+	& .card {
+		@apply h-full text-center p-4 md:p-10 cursor-pointer rounded md:rounded-2xl bg-slate-100;
+		@apply flex flex-row gap-4 md:gap-0 md:flex-col md:justify-between;
+		@apply shadow-md hover:shadow-xl transition duration-700 ease-in-out;
+	
+		& .content {
+			@apply flex flex-col justify-center items-start md:items-center;
+			& p {
+				@apply text-left md:text-center;
+			}
+		}
+
+		& .image {
+			@apply w-12 md:w-24 self-center;
+		}
+	}
+
+	&:last-child {
+		& .image {
+			@apply w-10 md:w-20;
+		}
+	}
+}
