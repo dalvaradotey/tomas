@@ -33,7 +33,7 @@ export default function Navbar() {
 		<nav
 			className={clsx([
 				isScrolled || isMobile ? "bg-white" : "bg-transparent",
-				"sticky md:fixed top-0 flex justify-around md:justify-between w-full p-6 z-[1000] gap-4 px-2 md:px-16",
+				"sticky md:fixed top-0 flex justify-around md:justify-between w-full p-6 z-30 gap-4 px-2 md:px-16",
 			])}
 		>
 			<Title />

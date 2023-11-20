@@ -5,12 +5,13 @@ import styles from "./styles/Card.module.css";
 
 type Props = HTMLAttributes<HTMLDivElement> & {
 	image: StaticImageData;
-	href: string;
+	href?: string;
 	target?: string
+	onClick?: () => void;
 };
 
-const Card: FC<Props> = ({ children, className, image, href, target="_self", ...rest }) => (
-	<a href={href} target={target} className={clsx([styles.anchor])}>
+const Card: FC<Props> = ({ children, className, image, href, target="_self", onClick, ...rest }) => (
+	<a onClick={onClick} href={href} target={target} className={clsx([styles.anchor])}>
 		<div className={clsx([styles.card, className])} {...rest}>
 			<Image
 				src={image}

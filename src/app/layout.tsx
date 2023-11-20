@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={clsx(['relative', inter.className])}>
+      <body className={clsx(['relative', 'scroll-smooth', inter.className])}>
         <Navbar />
         <main className="h-full">
           {children}
