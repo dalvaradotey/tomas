@@ -10,7 +10,7 @@ export default function Methods() {
 					¿Cómo donar?
 				</h2>
 				<p className="text-center text-xl md:text-2xl my-12">
-					Puedes donar utilizando cualquiera de estos métodos:
+					Puedes donar seleccionado cualquiera de estos métodos:
 				</p>
 				<div className="grid grid-cols-1 gap-4 my-2 md:grid-cols-4 md:gap-10 md:my-5">
 					<AidMethods />
