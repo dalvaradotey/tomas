@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import TomasFamiliaNieve from '../../../public/tomas-familia-nieve.jpg'
 import Elevidys from '../../../public/elevidys.png'
-import TomasPNG from '../../../public/tomas.png'
-import Link from 'next/link';
 import Banner from '@/components/Banner';
 
 export default function Testimonio() {
@@ -61,9 +59,9 @@ export default function Testimonio() {
           <p>Esta campaña tiene como objetivo reunir los fondos necesarios para <strong>costear el tratamiento que se debe administrar por única vez en la vida antes de los 6 años en Estados Unidos</strong>.</p>
           <p>Estamos contra el tiempo ya que tenemos meses para reunir este dinero. Es por eso que si estas leyendo este testimonio te pedimos que nos ayudes con dinero y/o difusión, para lograr el tan anhelado tratamiento para Tomás.</p>
         </div>
-        <div className="mt-10">
-          <Banner />
-        </div>
+      </div>
+      <div className="mt-10">
+        <Banner />
       </div>
     </>
   );
