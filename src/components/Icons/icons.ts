@@ -30,6 +30,18 @@ const icons: Icon = {
 	clipboard: {
 		icon: '/clipboard.png',
 		sizes: DEFAULT_SIZES,
+	},
+	x: {
+		icon: '/x.png',
+		sizes: DEFAULT_SIZES,
+	},
+	tiktok: {
+		icon: '/tiktok.png',
+		sizes: DEFAULT_SIZES,
+	},
+	instagram: {
+		icon: '/instagram.png',
+		sizes: DEFAULT_SIZES,
 	}
 }
 
