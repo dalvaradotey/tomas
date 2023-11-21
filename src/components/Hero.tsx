@@ -27,7 +27,7 @@ export default function Hero() {
                 <span className="md:text-lg ml-2">Ver el video</span>
               </button>
             </div>
-            <div className="mt-5 pb-16 border-t-4 border-dashed border-cyan-300 md:hidden pt-6 mt-12">
+            <div className="mt-5 pb-16 border-t-4 border-dashed border-cyan-300 md:hidden pt-6 mt-16">
               <CurrentGoal />
             </div>
           </div>
