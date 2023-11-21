@@ -5,7 +5,7 @@ export default function About() {
     <div id="mi-historia" className="px-8 md:py-24 md:px-36 md:h-screen bg-indigo-100 text-indigo-800">
       <div className="rounded-3xl md:flex h-full">
         <div className="align-middle px-18 pt-16">
-          <h2 className="text-xl text-indigo-800 opacity-90 mb-10">Mi enfermedad tiene cura y con tu ayuda lo puedo lograr ❤️</h2>
+          <h2 className="text-xl text-indigo-800 opacity-90 mb-10">Hoy tengo una posibilidad de un tratamiento que puede frenar la progresión de mi enfermedad ❤️</h2>
           <p className="text-xl md:text-4xl mt-3 leading-10">Tengo 5 años y hace algunos meses me diagnosticaron <span className="font-bold">Distrofía Muscular de Duchenne</span>. Necesito administrarme antes de los 6 años el remedio más caro del mundo que tiene un valor apróximado de 3.500 millones de pesos chilenos.</p>
           <p className="text-xl md:text-3xl my-8">Conoce mi testimonio completo <Link href="/testimonio" className="font-bold underline decoration-pink-500 underline-offset-8 cursor-pointer">aquí</Link>.</p>
           <div className="flex mt-4">
