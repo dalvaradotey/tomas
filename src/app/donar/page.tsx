@@ -1,6 +1,4 @@
-"use client";
-
-import AidMethods from "@/components/AidMethods";
+import AidMethodsSection from "@/components/AidMethodsSection";
 import Banner from "@/components/Banner";
 import { Metadata } from "next";
 
@@ -19,9 +17,7 @@ export default function Donar() {
         <p className="text-center text-xl md:text-2xl my-12">
           Puedes donar seleccionando cualquiera de estos métodos:
         </p>
-        <div className="grid grid-cols-1 gap-4 my-2 md:grid-cols-4 md:gap-10 md:my-5">
-          <AidMethods />
-        </div>
+        <AidMethodsSection />
       </div>
       <div className="mt-10">
         <Banner />
