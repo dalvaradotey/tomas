@@ -11,7 +11,7 @@ export default function Goals() {
       </div>
       <div className="md:w-3/5 md:px-20 md:py-8">
         <h3 className="hidden md:block text-2xl font-normal md:mb-5 mb-2 text-green-700 text-center md:text-left">Recaudación actualizada</h3>
-        <div className="border-t-4 border-dashed border-green-300 pt-5">
+        <div className="border-t-4 border-dashed border-green-300 pt-8">
           <CurrentGoalSection />
         </div>
       </div>
