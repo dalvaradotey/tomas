@@ -2,6 +2,12 @@ import Image from 'next/image'
 import TomasFamiliaNieve from '../../../public/tomas-familia-nieve.jpg'
 import Elevidys from '../../../public/elevidys.png'
 import Banner from '@/components/Banner';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Tomas contra Duchenne | Nuestro Testimonio',
+  description: 'Somos Alex y Camila, padres de Tomás. Este es nuestro testimonio.',
+}
 
 export default function Testimonio() {
   return (

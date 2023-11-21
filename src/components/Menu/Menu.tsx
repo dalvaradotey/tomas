@@ -4,26 +4,31 @@ import { FC, HTMLAttributes } from "react";
 import Icon from "../Icons/Icon";
 import LanguageSwitch from "../LanguageSwitch";
 import styles from "./styles/Menu.module.css";
+import { usePathname } from 'next/navigation'
 
 type Props = HTMLAttributes<HTMLDivElement> & {
 	onClose: () => void;
 };
 
+const activeMenu: string = 'underline decoration-pink-500 underline-offset-8 decoration-4';
+
 const Menu: FC<Props> = ({ onClose, className, ...rest }) => {
+	const pathname = usePathname()
+
 	return (
 		<div className={clsx([styles.nav, className])} {...rest}>
 			<ul role="menu" className={styles.menu}>
 				<li>
-					<Link onClick={onClose} className="underline decoration-pink-500 underline-offset-8 decoration-4" href="/">Inicio</Link>
+					<Link onClick={onClose} className={pathname === '/' ? activeMenu : ''} href="/">Inicio</Link>
 				</li>
 				<li>
-					<Link onClick={onClose} href="/duchenne">¿Qué es duchenne?</Link>
+					<Link onClick={onClose} className={pathname === '/duchenne' ? activeMenu : ''} href="/duchenne">¿Qué es duchenne?</Link>
 				</li>
 				<li>
-					<Link onClick={onClose} href="/testimonio">Testimonio</Link>
+					<Link onClick={onClose} className={pathname === '/testimonio' ? activeMenu : ''} href="/testimonio">Testimonio</Link>
 				</li>
 				<li>
-					<Link onClick={onClose} href="/donar">¿Cómo donar?</Link>
+					<Link onClick={onClose} className={pathname === '/donar' ? activeMenu : ''} href="/donar">¿Cómo donar?</Link>
 				</li>
 				<li className="hidden justify-center md:justify-center">
 					<LanguageSwitch onClick={onClose} />
