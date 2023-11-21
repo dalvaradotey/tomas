@@ -16,6 +16,7 @@ export default function Methods() {
 					<AidMethods />
 				</div>
 			</div>
+			
 		</>
 	);
 }

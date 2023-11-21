@@ -26,6 +26,10 @@ const icons: Icon = {
 	close: {
 		icon: '/close.png',
 		sizes: DEFAULT_SIZES,
+	},
+	clipboard: {
+		icon: '/clipboard.png',
+		sizes: DEFAULT_SIZES,
 	}
 }
 

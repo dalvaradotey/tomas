@@ -1,0 +1,5 @@
+.icon {
+	&[class$="text-white"] {
+		filter: invert(1);
+	}
+}
