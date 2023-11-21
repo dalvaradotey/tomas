@@ -3,7 +3,6 @@ import Goals from '@/components/Goals'
 import Hero from '@/components/Hero'
 import Instagram from '@/components/Instagram'
 import Methods from '@/components/Methods'
-import SocialNetworks from '@/components/SocialNetworks/SocialNetworks'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -23,10 +22,6 @@ export default function Home() {
       <Goals />
       <div className="bg-gradient-to-b from-green-50 to-white w-100 h-28" />
       <Instagram />
-			<section className='flex flex-col justify-center items-center mb-12'>
-				<p className="mb-4 text-gray-800 text-base font-thin">Apóyame en redes sociales</p>
-				<SocialNetworks />
-			</section>
     </>
   )
 }
