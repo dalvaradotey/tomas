@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Icon from "./Icons/Icon";
 import Menu from "./Menu/Menu";
 import Title from "./Title";
+import Link from "next/link";
 
 export default function Navbar() {
 	const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -36,7 +37,9 @@ export default function Navbar() {
 				"sticky md:fixed top-0 flex justify-around md:justify-between w-full p-6 z-30 gap-4 px-2 md:px-16",
 			])}
 		>
-			<Title />
+			<Link href="/">
+				<Title />
+			</Link>
 			{isMobile && (
 				<button className="cursor-pointer" onClick={handleMobileMenu}>
 					<Icon icon="menu" alt="menu" />
