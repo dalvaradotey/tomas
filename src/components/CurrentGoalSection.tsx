@@ -1,12 +1,11 @@
 export default function CurrentGoalSection() {
   return (
-    <div className="flex">
-      <div>
-        <div className="rounded-full border-4 border-green-400 px-1.5 py-1 md:px-3 md:py-4 mr-3 md:mr-4">
-          <span className="text-xl md:text-4xl font-bold text-green-900">1%</span>
-        </div>
+    <div className="md:flex">
+      <div className="w-fit rounded-full border-4 border-green-400 px-1.5 py-1 md:px-3 md:py-4 mr-3 md:mr-4">
+        <span className="text-xl md:text-4xl font-bold text-green-900">1%</span>
       </div>
-      <div className="">
+      <div className="mt-2 md:mt-0">
+        <p className="text-xl text-green-600 mb-1 font-semibold md:hidden">Recaudación actualizada</p>
         <p className="font-bold text-md md:text-xl text-green-800">
           <span className="md:block hidden">Meta recaudación: CLP $3.500.000.000</span>
           <span className="md:hidden block">Meta: CLP $3.500.000.000</span>
