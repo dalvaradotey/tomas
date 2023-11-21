@@ -5,7 +5,7 @@ import Banner from '@/components/Banner';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tomas contra Duchenne | Nuestro Testimonio',
+  title: 'Nuestro Testimonio | Tomas contra Duchenne',
   description: 'Somos Alex y Camila, padres de Tomás. Este es nuestro testimonio.',
 }
 
