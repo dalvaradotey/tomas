@@ -1,11 +1,11 @@
 .overlay {
 	background: rgba(0, 0, 0, 0.75);
-	@apply fixed top-0 left-0 w-full h-full z-40 px-2;
+	@apply fixed top-0 left-0 w-full h-full z-40;
 	@apply flex items-center justify-center;
 }
 
 .dialog {
-	width: min(100%, 500px);
+	width: min(90vw, 500px);
 	@apply rounded p-6 bg-white z-50;
 
 	& .header {
