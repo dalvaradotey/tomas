@@ -7,9 +7,9 @@ export default function Hero() {
       <div className="rounded-3xl md:flex md:h-full md:items-center">
         <div className="relative md:w-3/5">
           <div className="align-middle px-8 pt-8 md:pt-0">
-            <span className="text-2xl md:text-6xl font-bold">Mi nombre es <span className="underline decoration-cyan-500 underline-offset-8 md:decoration-8 decoration-4">Tomás</span>.</span>
-            <h1 className="md:text-3xl text-lg mt-4 md:mt-8 md:leading-9 leading-6">Necesito tu ayuda para costear el medicamento más caro del mundo.</h1>
-            <div className="py-5">
+            <span className="text-4xl md:text-6xl font-bold">Mi nombre es <span className="underline decoration-cyan-500 underline-offset-8 md:decoration-8 decoration-4">Tomás</span>.</span>
+            <h1 className="md:text-3xl text-xl mt-8 md:leading-9 leading-7">Necesito tu ayuda para costear el medicamento más caro del mundo.</h1>
+            <div className="py-5 md:block hidden">
               <CurrentGoal />
             </div>
             <VideoGallery className="md:hidden my-6" />
@@ -26,6 +26,9 @@ export default function Hero() {
                 </svg>
                 <span className="md:text-lg ml-2">Ver el video</span>
               </button>
+            </div>
+            <div className="mt-5 pb-16 border-t-4 border-dashed border-cyan-300 md:hidden pt-6 mt-12">
+              <CurrentGoal />
             </div>
           </div>
         </div>

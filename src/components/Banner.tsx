@@ -8,7 +8,7 @@ import SocialNetworks from "./SocialNetworks/SocialNetworks";
 
 export default function Banner() {
 	const isMobile = useMobile();
-
+ 
 	return (
 		<div className="grid grid-col-1 md:grid-cols-5 bg-amber-50 text-amber-900 items-center overflow-hidden rounded-xl">
 			<div className="col-span-1 md:col-span-3 py-4 px-10 md:p-10">
