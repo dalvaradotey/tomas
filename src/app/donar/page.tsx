@@ -2,6 +2,12 @@
 
 import AidMethods from "@/components/AidMethods";
 import Banner from "@/components/Banner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Tomas contra Duchenne | ¿Cómo donar?',
+  description: 'Tengo 5 años y me diagnosticaron Distrofía Muscular de Duchenne. Necesito administrarme el remedio más caro del mundo de 3.500 millones de pesos chilenos.',
+}
 
 export default function Donar() {
   return (

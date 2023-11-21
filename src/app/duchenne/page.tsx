@@ -1,4 +1,10 @@
 import Banner from "@/components/Banner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Tomas contra Duchenne | ¿Qué es Duchenne?',
+  description: 'Es un desorden progresivo del músculo que causa la pérdida de su función y por lo tanto los afectados terminan perdiendo totalmente su independencia.',
+}
 
 export default function Duchenne() {
   return (
