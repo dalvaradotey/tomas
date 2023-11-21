@@ -44,7 +44,7 @@ export default function Banner() {
 						<span className="md:text-md ml-2">¿Cómo donar?</span>
 					</Link>
 					{!isMobile && (
-						<div className="flex flex-col border-l border-amber-900 pl-6 gap-2">
+						<div className="flex flex-col border-l-2 border-amber-900 pl-6 gap-2">
 							<small className="text-xs">Sígueme en mis redes sociales</small>
 							<SocialNetworks />
 						</div>

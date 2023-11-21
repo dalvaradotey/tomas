@@ -1,7 +1,20 @@
+'use client';
+
+import dynamic from "next/dynamic";
+import { Suspense, useState } from "react";
 import CurrentGoal from "./CurrentGoal";
+import VimeoPlayer from "./Player/VimeoPlayer";
 import VideoGallery from "./VideoGallery";
 
+const VideoDialog = dynamic(() => import('./Dialog/VideoDialog'));
+
 export default function Hero() {
+	const [isOpen, setIsOpen] = useState<boolean>(false);
+
+	const handleCloseVideo = () => setIsOpen(false);
+
+	const handleOpenVideo = () => setIsOpen(true);
+
   return (
     <div className="bg-cyan-100 md:h-screen text-cyan-900 md:px-16">
       <div className="rounded-3xl md:flex md:h-full md:items-center">
@@ -12,7 +25,7 @@ export default function Hero() {
             <div className="py-5 md:block hidden">
               <CurrentGoal />
             </div>
-            <VideoGallery className="md:hidden my-6" />
+            <VideoGallery className="md:hidden my-6" onOpenVideo={handleOpenVideo}/>
             <div className="flex mt-10">
               <a href="#mi-historia" className="flex text-white bg-indigo-500 hover:bg-indigo-700 font-medium rounded-full text-sm px-3 py-4 md:px-5 md:py-4 text-center me-2 mb-2 transition duration-700 ease-in-out">
                 <svg className="animate-bounce mt-2 w-4 h-4 md:w-6 md:h-6 text-indigo-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
@@ -20,7 +33,7 @@ export default function Hero() {
                 </svg>
                 <span className="md:text-lg ml-2">Conoce mi historia</span>
               </a>
-              <button type="button" className="flex text-white bg-cyan-500 hover:bg-cyan-800 font-medium rounded-full text-sm px-3 py-4 md:px-5 md:py-4 text-center mb-2 transition duration-700 ease-in-out">
+              <button type="button"  onClick={handleOpenVideo} className="flex text-white bg-cyan-500 hover:bg-cyan-800 font-medium rounded-full text-sm px-3 py-4 md:px-5 md:py-4 text-center mb-2 transition duration-700 ease-in-out">
                 <svg className="w-4 h-4 md:w-6 md:h-6 text-cyan-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 10 16">
                   <path d="M3.414 1A2 2 0 0 0 0 2.414v11.172A2 2 0 0 0 3.414 15L9 9.414a2 2 0 0 0 0-2.828L3.414 1Z"></path>
                 </svg>
@@ -33,9 +46,14 @@ export default function Hero() {
           </div>
         </div>
         <div className="md:w-2/5 relative">
-          <VideoGallery className="hidden md:block py-8" />
+          <VideoGallery className="hidden md:block py-8" onOpenVideo={handleOpenVideo} />
         </div>
       </div>
+			<Suspense fallback={<div />}>
+				<VideoDialog isOpen={isOpen} onClose={handleCloseVideo}>
+					<VimeoPlayer videoId="886676814" />
+				</VideoDialog>
+			</Suspense>
     </div>
   )
 }

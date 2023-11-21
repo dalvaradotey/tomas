@@ -1,14 +1,20 @@
-import Image from 'next/image'
-import TomasPaisaje from '../../public/tomas-paisaje.jpg';
+import clsx from 'clsx';
+import Image from 'next/image';
+import { FC, HTMLAttributes } from 'react';
 import TomasCapillasMarmol from '../../public/tomas-catedrales.jpg';
 import TomasFamiliaNieve from '../../public/tomas-familia-nieve.jpg';
+import TomasPaisaje from '../../public/tomas-paisaje.jpg';
 import TomasTeleton from '../../public/tomas-teleton.jpg';
 
-export default function VideoGallery(props: any) {
+type Props = HTMLAttributes<HTMLDivElement> & {
+	onOpenVideo: () => void;
+}
+
+const VideoGallery: FC<Props> = ({ onOpenVideo, className, ...rest }) => {
   return (
-    <div className={`relative ${props.className}`}>
+    <div className={clsx(['relative', className])} {...rest}>
       <div className="absolute top-[38%] left-[38%] md:top-[42%] md:left-[42%]">
-        <button className="relative flex h-20 w-20">
+        <button className="relative flex h-20 w-20" onClick={onOpenVideo} >
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-20 w-20 bg-cyan-500 opacity-90 hover:opacity-100 transition duration-700 ease-in-out">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="mt-4 ml-4 text-cyan-200">
@@ -46,3 +52,5 @@ export default function VideoGallery(props: any) {
     </div>
   )
 }
+
+export default VideoGallery
