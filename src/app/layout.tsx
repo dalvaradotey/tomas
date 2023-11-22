@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import './globals.css'
 import Script from 'next/script'
 import Footer from '@/components/Footer'
+import DonateButton from '@/components/DonateButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -57,6 +58,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <DonateButton />
 				<ToastContainer />
       </body>
     </html>
