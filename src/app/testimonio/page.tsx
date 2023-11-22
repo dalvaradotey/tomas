@@ -6,7 +6,22 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Nuestro Testimonio | Tomas contra Duchenne',
-  description: 'Somos Alex y Camila, padres de Tomás. Este es nuestro testimonio.',
+  description: 'Tengo 5 años y me diagnosticaron Distrofía Muscular de Duchenne. Necesito administrarme remedio más caro del mundo de 3.500 millones de pesos chilenos.',
+  openGraph: {
+    siteName: 'Tomas contra Duchenne',
+    locale: 'es-CL',
+    type: 'website',
+    title: 'Nuestro Testimonio | Tomas contra Duchenne',
+    description: 'Tengo 5 años y me diagnosticaron Distrofía Muscular de Duchenne. Necesito administrarme remedio más caro del mundo de 3.500 millones de pesos chilenos.',
+    url: 'https://ayudatomas.com/testimonio',
+    images: [
+      {
+        url: '/tomas-og.jpg',
+        width: 662,
+        height: 487,
+      },
+    ],
+  },
 }
 
 export default function Testimonio() {

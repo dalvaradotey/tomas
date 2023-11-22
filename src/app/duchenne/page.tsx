@@ -4,6 +4,21 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: '¿Qué es Duchenne? | Tomas contra Duchenne',
   description: 'Es un desorden progresivo del músculo que causa la pérdida de su función y por lo tanto los afectados terminan perdiendo totalmente su independencia.',
+  openGraph: {
+    siteName: 'Tomas contra Duchenne',
+    locale: 'es-CL',
+    type: 'website',
+    title: '¿Qué es Duchenne? | Tomas contra Duchenne',
+    description: 'Es un desorden progresivo del músculo que causa la pérdida de su función y por lo tanto los afectados terminan perdiendo totalmente su independencia.',
+    url: 'https://ayudatomas.com/duchenne',
+    images: [
+      {
+        url: '/tomas-og.jpg',
+        width: 662,
+        height: 487,
+      },
+    ],
+  },
 }
 
 export default function Duchenne() {
