@@ -15,7 +15,7 @@ const SocialNetworks: FC<Props> = ({
 }) => (
 	<div
 		className={clsx([
-			"flex gap-8",
+			"flex gap-6 md:gap-8",
 			orientation === "portrait" ? 'flex-col justify-center items-start' : 'flex-row justify-start items-center',
 			className])}
 		{...rest}
@@ -28,6 +28,9 @@ const SocialNetworks: FC<Props> = ({
 		</a>
 		<a href="https://twitter.com/tomasxduchenne" target="_blank">
 			<Icon icon="x" alt="Sígueme en X" />
+		</a>
+		<a href="https://www.facebook.com/profile.php?id=61553041485172&mibextid=ZbWKwL" target="_blank">
+			<Icon icon="facebook" alt="Sígueme en facebook" />
 		</a>
 	</div>
 );

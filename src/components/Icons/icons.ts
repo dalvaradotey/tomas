@@ -42,6 +42,10 @@ const icons: Icon = {
 	instagram: {
 		icon: '/instagram.png',
 		sizes: DEFAULT_SIZES,
+	},
+	facebook: {
+		icon: '/facebook.png',
+		sizes: DEFAULT_SIZES,
 	}
 }
 
