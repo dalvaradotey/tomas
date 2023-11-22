@@ -32,14 +32,14 @@ export default function Testimonio() {
           />
           <p className="text-sm text-center text-gray-500 mt-2">Foto: Alex, Tomás, Camila y Erwin.</p>
         </div>
-        <div className="space-y-4 space-x-4 md:space-x-0">
+        <div className="px-6 md:px-0 space-y-4 md:space-x-0">
           <h2 className="mt-2 text-2xl text-center md:text-left">Este es nuestro testimonio.</h2>
           <p><strong>Tomás es nuestro hijo mayor de 5 años</strong>, nació en el año 2018 sin ninguna complicación, fue cumpliendo sus etapas del desarrollo de forma normal y con muy buena salud. Alrededor de los 3 años y medio desde el colegio <strong>nos derivaron a terapeuta ocupacional por algunos problemas motores</strong> que pesquisaron al compararlo con los demás niños y fue el Terapeuta quien luego de su evaluación <strong>nos dijo que tenía un retraso motor severo según la puntuación de sus escalas</strong>, así que iniciamos sesiones de terapia ocupacional para nivelar su retraso, pero al pasar los meses no vimos avances y es en ese momento en donde partió nuestra preocupación.</p>
           <p>Lo llevamos a <strong>un Traumatólogo infantil</strong> quien luego de su examen físico y exámenes de sangre <strong>nos dijo que Tomás tenía Distrofia Muscular de Duchenne (DMD)</strong> pero que este diagnóstico debía ser confirmado con un examen genético y que <strong>su evaluación debía continuar con la especialidad de Neurología</strong>.</p>
           <p>En Febrero del 2023 posterior a su visita con la <strong>neuróloga especialista en enfermedades neuromusculares</strong> le tomamos el <strong>examen genético</strong> cuya muestra se envía a Estados Unidos y el resultado se demora un mes.</p>
         </div>
         <p className="my-8 md:text-xl italic bg-amber-50 text-amber-900 leading-8 px-4 py-8">&ldquo;Fue el mes de mayor angustia en nuestras vidas ya que todo lo que leíamos en internet sobre la enfermedad era devastador.&rdquo;</p>
-        <div className="space-y-4 space-y-4 space-x-4 md:space-x-0">
+        <div className="px-6 md:px-0 space-y-4 md:space-x-0">
           <div className="float-right hidden md:block">
             <Image
               src={Elevidys}
