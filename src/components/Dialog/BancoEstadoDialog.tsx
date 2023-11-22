@@ -20,7 +20,7 @@ const BancoEstadoDialog: FC<Props> = ({ isOpen, onClose, ...rest }) => {
 
 	return (
 		<Dialog
-				title="Transaferencia Banco Estado"
+				title="Transferencia Banco Estado"
 				isOpen={isOpen}
 				onClose={onClose}
 			>
