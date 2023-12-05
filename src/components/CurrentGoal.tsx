@@ -15,7 +15,7 @@ export default function CurrentGoal() {
           <span className="md:hidden block">Recaudado: CLP $74.214.000</span>
         </p>
         <p className="text-xs opacity-70 flex">
-          <span className="md:block hidden">Actualización:&nbsp;</span>19 noviembre 2023 - 10:30 hrs
+          <span className="md:block hidden">Actualización:&nbsp;</span>05 diciembre 2023 - 18:00 hrs
         </p>
       </div>
     </div>
