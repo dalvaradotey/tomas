@@ -39,7 +39,7 @@ export default function Footer() {
         </li>
         <li>
           <Link
-            href="/bases-rifa-parcelas"
+            href="/bases-legales-rifa"
             className="hover:underline hover:decoration-pink-500 hover:underline-offset-8 hover:decoration-4"
           >
             Bases legales rifa
