@@ -37,6 +37,14 @@ export default function Footer() {
             ¿Cómo donar?
           </Link>
         </li>
+        <li>
+          <Link
+            href="/bases-legales-rifa"
+            className="hover:underline hover:decoration-pink-500 hover:underline-offset-8 hover:decoration-4"
+          >
+            Bases legales rifa
+          </Link>
+        </li>
       </ul>
       <p className="mb-4 text-gray-800 text-base font-thin">Apóyame en redes sociales</p>
       <SocialNetworks />
