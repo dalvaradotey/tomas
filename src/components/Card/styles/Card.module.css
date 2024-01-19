@@ -2,7 +2,7 @@
 	@apply w-full p-0 m-0;
 
 	& .card {
-		@apply h-full text-center p-4 md:p-10 cursor-pointer rounded md:rounded-2xl bg-slate-100;
+		@apply h-full text-center p-4 md:p-10 cursor-pointer rounded md:rounded-[30px] bg-white;
 		@apply flex flex-row gap-4 md:gap-0 md:flex-col md:justify-between;
 		@apply shadow-md hover:shadow-xl transition duration-700 ease-in-out;
 	

@@ -1,32 +1,52 @@
+'use client';
+
 import Link from "next/link";
+import Image from 'next/image';
+import TomasAireLibre from '@public/toma-aire-libre.jpg';
+import LinkButton from "./LinkButton";
+import PlayButton from "./PlayButton";
+import { Suspense, useState } from "react";
+import VideoDialog from "./Dialog/VideoDialog";
+import VimeoPlayer from "./Player/VimeoPlayer";
 
 export default function About() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+	const handleCloseVideo = () => setIsOpen(false);
+
+	const handleOpenVideo = () => setIsOpen(true);
+
   return (
-    <div id="mi-historia" className="px-8 md:py-24 md:px-36 md:h-screen bg-indigo-100 text-indigo-800">
-      <div className="rounded-3xl md:flex h-full">
-        <div className="align-middle px-18 pt-16">
-          <h2 className="text-xl text-indigo-800 opacity-90 mb-10">Hoy tengo una posibilidad de tratamiento que puede frenar la progresión de mi enfermedad ❤️</h2>
-          <p className="text-xl md:text-4xl mt-3 leading-10">Tengo 5 años y hace algunos meses me diagnosticaron <span className="font-bold">Distrofía Muscular de Duchenne</span>. Necesito administrarme antes de los 6 años el remedio más caro del mundo que tiene un valor apróximado de 3.500 millones de pesos chilenos.</p>
-          <p className="text-xl md:text-3xl my-8">Conoce mi testimonio completo <Link href="/testimonio" className="font-bold underline decoration-pink-500 underline-offset-8 cursor-pointer">aquí</Link>.</p>
-          <div className="md:flex mt-4">
-            <a
-              href="#donar"
-              className="flex text-white bg-pink-500 hover:bg-pink-600 focus:outline-none font-medium rounded-full text-sm px-3 py-4 md:px-5 md:py-4  text-center me-2 mb-2 transition duration-700 ease-in-out w-full md:w-fit justify-center"
-            >
-              <svg className="animate-bounce mt-2 w-4 h-4 md:w-6 md:h-6 text-pink-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1v12m0 0 4-4m-4 4L1 9"></path>
-              </svg>
-              <span className="md:text-lg ml-2">¿Cómo donar?</span>
-            </a>
-            <Link href="/duchenne" className="flex text-white bg-indigo-400 hover:bg-indigo-600 focus:outline-none font-medium rounded-full text-sm px-3 py-4 md:px-5 md:py-4  text-center me-2 md:mb-2 transition duration-700 ease-in-out w-full md:w-fit justify-center">
-              <svg style={{ marginTop: '4px' }} className="w-4 h-4 md:w-6 md:h-6 text-indigo-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-              </svg>
-              <span className="md:text-lg ml-2">¿Qué es duchenne?</span>
-            </Link>
-          </div>
+    <div id="mi-historia" className="md:py-48 md:px-36 md:h-screen md:flex text-primary">
+      <div className="md:w-4/6 md:pr-28">
+        <h2 className="text-6xl font-bold text-secondary">Mi historia</h2>
+        <p className="text-justify text-xl leading-normal mt-4">Mi nombre es Tomás Ross, tengo 5 años y hace algunos meses me diagnosticaron Distrofía Muscular de Duchenne, una enfermedad degenerativa que afectará significativamente mi movilidad a través del tiempo y reduce mi esperanza de vida a los 30 años. La buena noticia es que la FDA aprobó el primer medicamento de terapia genética para esta enfermedad, llamado Elevidys. ¿La mala noticia? El costo del tratamiento es 3.500 millones de pesos chilenos y necesito administrarme antes de los 6 años.</p>
+        <div className="py-8">
+          <LinkButton href="" className="flex items-center">
+            <svg className="mt-[4px] w-6 h-6 text-secondary animate-[animate-bounce-right_1s_ease-in-out_infinite]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+            </svg>
+            <span className="ml-2">Conoce mi testimonio</span>
+          </LinkButton>
         </div>
       </div>
+      <div className="md:w-2/6 h-full relative justify-center">
+        <div className="w-full h-full bg-fourth absolute right-12 rounded-3xl top-0 opacity-30 z-0"></div>
+        <Image
+          src={TomasAireLibre}
+          className="h-full aspect-video object-cover rounded-[50px] absolute top-6 right-4 z-1"
+          alt=""
+          quality={100}
+        />
+        <div className="absolute bottom-1 right-8">
+          <PlayButton onClick={handleOpenVideo} />
+        </div>
+      </div>
+      <Suspense fallback={<div />}>
+				<VideoDialog isOpen={isOpen} onClose={handleCloseVideo}>
+					<VimeoPlayer videoId="886676814" />
+				</VideoDialog>
+			</Suspense>
     </div>
   )
 }

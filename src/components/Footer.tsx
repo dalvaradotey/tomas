@@ -3,7 +3,7 @@ import SocialNetworks from "./SocialNetworks/SocialNetworks";
 
 export default function Footer() {
   return (
-    <section className='flex flex-col justify-center items-center mt-12 mb-24 md:mb-12'>
+    <section className='flex flex-col justify-center items-center py-24 bg-white'>
       <ul className="space-y-2 text-lg text-gray-500 font-normal md:flex md:space-y-0 md:space-x-12 py-8 md:py-4">
         <li>
           <Link

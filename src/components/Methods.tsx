@@ -5,14 +5,14 @@ import AidMethods from "./AidMethods";
 export default function Methods() {
 	return (
 		<>
-			<div id="donar" className="px-8 py-20 md:py-24 md:px-28 text-neutral-700">
-				<h2 className="text-3xl md:text-5xl font-semibold text-center">
+			<div id="donar" className="md:py-24 md:px-28 text-primary">
+				<h2 className="text-5xl font-bold text-center text-secondary">
 					¿Cómo donar?
 				</h2>
-				<p className="text-center text-xl md:text-2xl my-12">
-					Puedes donar seleccionado cualquiera de estos métodos:
+				<p className="text-center text-3xl my-2">
+					Realiza tu donación a través de estós métodos
 				</p>
-				<div className="grid grid-cols-1 gap-4 my-2 md:grid-cols-4 md:gap-10 md:my-5">
+				<div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-10 my-14">
 					<AidMethods />
 				</div>
 			</div>
