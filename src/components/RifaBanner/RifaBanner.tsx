@@ -8,7 +8,7 @@ export const RifaBanner = () => (
   <div className={style?.rifaBanner}>
     <div>
       <h2>Gran rifa solidaria por Tomás</h2>
-      <p className="text-3xl font-light mb-2">Participa y gana una parcela en Chiloé</p>
+      <h3>Participa y gana una parcela en Chiloé</h3>
       <p className="text-xl">Parcela de 5.000 m2 a orilla de camino, con derecho a orilla de la Laguna Popetan. Acceso a luz eléctrica. Aprox a 6 km de Quemchi, Chiloé.</p>
       <p className="text-lg mt-3 mb-3">Sorteo 1 junio de 2024</p>
       <div className="md:hidden my-8">

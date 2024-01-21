@@ -1,11 +1,11 @@
 .rifaBanner {
-  @apply text-primary md:flex bg-white px-8 py-8 md:px-40 md:py-10 items-center bg-[linear-gradient(to_right,rgba(130,106,237,0.8),rgba(217,70,239,0.8)),url('/paisaje-rifa.jpg')];
+  @apply md:flex bg-white px-8 py-8 md:px-40 md:py-10 items-center bg-[linear-gradient(to_right,rgba(130,106,237,0.8),rgba(217,70,239,0.8)),url('/paisaje-rifa.jpg')];
 
   & div:first-child {
     @apply md:w-9/12 md:mr-28;
 
     & h2 {
-      @apply text-primary text-5xl font-bold mb-3;
+      @apply text-primary text-4xl md:text-5xl font-semibold mb-3;
     }
   }
 
