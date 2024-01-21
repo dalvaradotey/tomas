@@ -2,7 +2,7 @@ import Image from 'next/image'
 import TomasFamiliaNieve from '@public/tomas-familia-nieve.jpg'
 import Elevidys from '@public/elevidys.png'
 import Banner from '@/components/Banner';
-import style from './style.module.css';
+import style from './testimonio.module.css';
 import { Metadata } from 'next';
 import clsx from 'clsx';
 

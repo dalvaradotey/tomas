@@ -1,6 +1,6 @@
 "use client";
 
-import AidMethods from "./AidMethods";
+import AidMethods from "../AidMethods";
 
 export default function Methods() {
 	return (

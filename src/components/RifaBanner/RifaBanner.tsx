@@ -2,7 +2,7 @@ import Image from "next/image"
 import LinkButton from "../LinkButton"
 import TomasRifa from "@public/tomas-rifa.jpg"
 import Link from "next/link"
-import style from "./style.module.css"
+import style from "./RifaBanner.module.css"
 import clsx from "clsx"
 
 export const RifaBanner = () => (

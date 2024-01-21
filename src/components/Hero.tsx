@@ -55,7 +55,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="md:w-3/6 h-[500px] md:h-full px-4 md:px-8 md:pt-6">
+          <div className="md:w-3/6 h-[500px] md:h-full px-8 md:px-8 md:pt-6">
             <div className="relative h-full md:h-screen">
               <Image
                 src={TomasPaisaje}
@@ -64,12 +64,14 @@ export default function Hero() {
                 quality={100}
               />
               <div className="md:hidden absolute w-full">
-                <LinkButton href="/testimonio" className="flex items-center absolute bottom-4">
-                  <svg className="mt-[4px] w-6 h-6 text-secondary animate-[animate-bounce-right_1s_ease-in-out_infinite]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-                  </svg>
-                  <span className="ml-2">Conoce mi testimonio</span>
-                </LinkButton>
+                <div className="relative mx-4">
+                  <LinkButton href="/testimonio" className="flex items-center absolute bottom-4">
+                    <svg className="mt-[4px] w-6 h-6 text-secondary animate-[animate-bounce-right_1s_ease-in-out_infinite]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                    </svg>
+                    <span className="ml-2">Conoce mi testimonio</span>
+                  </LinkButton>
+                </div>
               </div>
             </div>
           </div>

@@ -1,13 +1,14 @@
 'use client';
 
-import Link from "next/link";
 import Image from 'next/image';
 import TomasAireLibre from '@public/toma-aire-libre.jpg';
-import LinkButton from "./LinkButton";
-import PlayButton from "./PlayButton";
+import LinkButton from "../LinkButton";
+import PlayButton from "../PlayButton";
 import { Suspense, useState } from "react";
-import VideoDialog from "./Dialog/VideoDialog";
-import VimeoPlayer from "./Player/VimeoPlayer";
+import VideoDialog from "../Dialog/VideoDialog";
+import VimeoPlayer from "../Player/VimeoPlayer";
+import clsx from 'clsx';
+import style from './About.module.css'
 
 export default function About() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -17,10 +18,10 @@ export default function About() {
 	const handleOpenVideo = () => setIsOpen(true);
 
   return (
-    <div id="mi-historia" className="container-box md:h-screen md:flex items-center">
-      <div className="md:w-4/6 md:pr-28">
-        <h2 className="text-4xl md:text-6xl">Mi historia</h2>
-        <p className="text-justify mt-4">Mi nombre es <strong>Tomás Ross</strong>, tengo 5 años y hace algunos meses me diagnosticaron <strong>Distrofía Muscular de Duchenne</strong>, una enfermedad degenerativa que afectará significativamente mi movilidad a través del tiempo y reduce mi esperanza de vida a los 30 años. La buena noticia es que <strong>la FDA aprobó el primer medicamento</strong> de terapia genética para esta enfermedad, llamado <strong>Elevidys</strong>. ¿La mala noticia? El costo del tratamiento es <strong>3.500 millones de pesos chilenos</strong> y necesito administrarme antes de los 6 años.</p>
+    <div id="mi-historia" className={clsx(['container-box', style?.aboutContainer])}>
+      <div className={style?.aboutContent}>
+        <h2>Mi historia</h2>
+        <p>Mi nombre es <strong>Tomás Ross</strong>, tengo 5 años y hace algunos meses me diagnosticaron <strong>Distrofía Muscular de Duchenne</strong>, una enfermedad degenerativa que afectará significativamente mi movilidad a través del tiempo y reduce mi esperanza de vida a los 30 años. La buena noticia es que <strong>la FDA aprobó el primer medicamento</strong> de terapia genética para esta enfermedad, llamado <strong>Elevidys</strong>. ¿La mala noticia? El costo del tratamiento es <strong>3.500 millones de pesos chilenos</strong> y necesito administrarme antes de los 6 años.</p>
         <div className="py-8">
           <LinkButton href="/testimonio" className="hidden md:flex items-center">
             <svg className="mt-[4px] w-6 h-6 text-secondary animate-[animate-bounce-right_1s_ease-in-out_infinite]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -30,7 +31,7 @@ export default function About() {
           </LinkButton>
         </div>
       </div>
-      <div className="w-100 h-80 md:w-2/6 md:h-full relative md:justify-center">
+      <div className={style?.aboutImage}>
         <div className="w-full h-full bg-fifth absolute md:right-12 right-4 rounded-3xl md:top-0 top-[-20px] z-0"></div>
         <Image
           src={TomasAireLibre}

@@ -1,6 +1,6 @@
-import About from '@/components/About'
+import About from '@/components/About/About'
 import Hero from '@/components/Hero'
-import Methods from '@/components/Methods'
+import Methods from '@/components/Methods/Methods'
 import RifaBanner from '@/components/RifaBanner/RifaBanner'
 import { Metadata } from 'next'
 
