@@ -40,14 +40,14 @@ export default function Testimonio() {
           </div>
           <div>
             <h1>Somos Alex y Camila</h1>
-            <span className="text-3xl md:text-4xl font-normal text-secondary text-left">Padres de Tomás y Erwin</span>
-            <h2 className="mt-4">Este es nuestro testimonio</h2>
+            <h2 className="text-left">Padres de Tomás y Erwin</h2>
+            <h3 className="mt-4">Este es nuestro testimonio</h3>
             <p><strong>Tomás es nuestro hijo mayor de 5 años</strong>, nació en el año 2018 sin ninguna complicación, fue cumpliendo sus etapas del desarrollo de forma normal y con muy buena salud. Alrededor de los 3 años y medio desde el colegio <strong>nos derivaron a terapeuta ocupacional por algunos problemas motores</strong> que pesquisaron al compararlo con los demás niños y fue el Terapeuta quien luego de su evaluación <strong>nos dijo que tenía un retraso motor severo según la puntuación de sus escalas</strong>, así que iniciamos sesiones de terapia ocupacional para nivelar su retraso, pero al pasar los meses no vimos avances y es en ese momento en donde partió nuestra preocupación.</p>
           </div>
         </div>
         <div className={style?.content}>
           <div className="mb-28 md:mb-0">
-            <h2>Se confirma el diagnóstico de DMD</h2>
+            <h3>Se confirma el diagnóstico de DMD</h3>
             <p>Lo llevamos a <strong>un Traumatólogo infantil</strong> quien luego de su examen físico y exámenes de sangre <strong>nos dijo que Tomás tenía Distrofia Muscular de Duchenne (DMD)</strong> pero que este diagnóstico debía ser confirmado con un examen genético y que <strong>su evaluación debía continuar con la especialidad de Neurología</strong>.</p>
             <p>En Febrero del 2023 posterior a su visita con la <strong>neuróloga especialista en enfermedades neuromusculares</strong> le tomamos el <strong>examen genético</strong> cuya muestra se envía a Estados Unidos y el resultado se demora un mes.</p>
             <div className={style?.blockquote}>
@@ -61,7 +61,7 @@ export default function Testimonio() {
           <div className="mb-28 md:mb-0">
             <div className="md:flex md:items-center">
               <div className="md:w-6/12">
-                <h2>FDA aprueba el primer medicamento para DMD</h2>
+                <h3>FDA aprueba el primer medicamento para DMD</h3>
                 <p>Como padres no quisimos quedarnos con eso, así que fuimos estudiando sobre el tema y siguiendo las publicaciones de los ensayos vigentes en cuanto a los potenciales tratamientos contra Duchenne, ¡hasta que llegó el gran día! <strong>La FDA aprobó el primer medicamento de terapia genética específico para la DMD</strong> cuyo objetivo es detener la progresión de la enfermedad.</p>
                 <p>Tomamos contacto con <strong>Sarepta</strong> que es el laboratorio que patentó este <strong>medicamento llamado Elevidys</strong> y luego de confirmar que Tomás cumplía con los requisitos de administración nos enlazaron con el hospital de niños de Arkansas en Estados Unidos, quienes nos entregaron una <strong>cotización por casi 4 millones de dólares</strong>.</p>
                 <p><strong>No podíamos creer lo que estábamos leyendo</strong>, la única opción de tratamiento que tiene nuestro hijo tenía un precio inalcanzable para nuestra familia.</p>
@@ -78,7 +78,7 @@ export default function Testimonio() {
             </div>
           </div>
           <div className="mb-28 md:mb-0">
-            <h2>Inicia campaña de recaudación</h2>
+            <h3>Inicia campaña de recaudación</h3>
             <p>Por segunda vez no quisimos bajar los brazos y esa misma noche iniciamos la <strong>campaña #TomasContraDuchenne</strong>.</p>
             <p>Esta campaña tiene como objetivo reunir los fondos necesarios para <strong>costear el tratamiento que se debe administrar por única vez en la vida antes de los 6 años en Estados Unidos</strong>.</p>
             <p>Estamos contra el tiempo ya que tenemos meses para reunir este dinero. Es por eso que si estas leyendo este testimonio te pedimos que nos ayudes con dinero y/o difusión, para lograr el tan anhelado tratamiento para Tomás.</p>      

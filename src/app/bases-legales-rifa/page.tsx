@@ -32,23 +32,23 @@ export default function BasesRifaParcela() {
         alt=""
         quality={100}
       />
-      <div className="text-primary p-8 md:py-36 md:px-40 text-2xl md:text-xl leading-10 font-light space-y-10">
-        <h1 className="text-5xl font-semibold">Bases Concurso &ldquo;Gana una Parcela en Chiloé&rdquo;</h1>
+      <div className="text-primary p-8 md:py-36 md:px-40 space-y-10">
+        <h1>Bases Concurso &ldquo;Gana una Parcela en Chiloé&rdquo;</h1>
         <div className="grid gap-12">
           <div>
-            <h2 className="text-3xl font-extralight mb-6">Primero: Individualización del creador y organizador del Concurso</h2>
+            <h2 className="mb-6">Primero: Individualización del creador y organizador del Concurso</h2>
             <p>Por el Presente instrumento, Andrea Alejandra Valenzuela Serra, cédula de identidad nº 12.639.014-9, domiciliada en el Predio Bellavista, Pasaje los Pinos casa 5, Ancud. Vengo a Través del presente a legalizar las bases del concurso, estableciendo las condiciones sobre las cuales se regirá la campaña y promoción denominada <span className="bold">Gana una Parcela en Chiloé</span>.</p>
           </div>
           <div>
-            <h2 className="text-3xl font-extralight mb-6">Segundo: Requisitos para participar y publicaciones de las bases.</h2>
+            <h2 className="mb-6">Segundo: Requisitos para participar y publicaciones de las bases.</h2>
             <p>Sin perjuicio de las condiciones del concurso que se indicarán más abajo. Las bases también se detallarán en la página web <a href="https://www.tomascontraduchenne.com" className="text-secondary font-bold underline">www.tomascontraduchenne.com</a> y podrán participar todas aquellas personas naturales, Chilenas o extranjeras que adquieran uno o más tickets en los términos expresados en las siguientes bases del concurso.</p>
           </div>
           <div>
-            <h2 className="text-3xl font-extralight mb-6">Tercero: Objetivo del concurso </h2>
+            <h2 className="mb-6">Tercero: Objetivo del concurso </h2>
             <p>Único premio. La finalidad de este concurso sin fines de lucro es la recaudación de dinero para financiar el tratamiento de Tomás Antonio Ross Gómez quien padece de Distrofia Muscular de Duchenne. El ganador/a va adquirir el dominio de la propiedad ubicada en Aucar Alto Lote 2, rol 00187-00152  que le corresponde como único dueño a Don Jaime Alberto Eschmann Delgado , cédula de identidad n° 8842945-1.</p>
           </div>
           <div>
-            <h2 className="text-3xl font-extralight mb-6">Cuarto: Vigencia del concurso y detalles de Bases</h2>
+            <h2 className="mb-6">Cuarto: Vigencia del concurso y detalles de Bases</h2>
             <div>
               <ol className="list-decimal md:mx-6">
                 <li>Los tickets se podrán comprar desde el día 2 de Enero del 2024 hasta el 1 de Junio del 2024 solo si se cumple la meta de 10.000 unidades de tickets aportados.</li>

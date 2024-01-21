@@ -1,12 +1,4 @@
 .pageTestimony {
-  & h1 {
-    @apply text-5xl font-semibold;
-  }
-
-  & h2 {
-    @apply text-4xl font-extralight mb-8 text-left;
-  }
-
   & p {
     @apply text-justify leading-10;
   }
