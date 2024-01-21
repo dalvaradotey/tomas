@@ -2,7 +2,7 @@
 	@apply fixed top-0 left-0 w-full h-full z-10 pt-4 bg-white;
 
 	& li {
-		@apply text-center p-4;
+		@apply text-center p-4 text-primary font-semibold;
 	}
 
 	& .menu {

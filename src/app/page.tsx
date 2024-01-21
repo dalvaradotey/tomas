@@ -1,9 +1,7 @@
 import About from '@/components/About'
-import Goals from '@/components/Goals'
 import Hero from '@/components/Hero'
-import Instagram from '@/components/Instagram'
 import Methods from '@/components/Methods'
-import Rifa from '@/components/Rifa'
+import RifaBanner from '@/components/RifaBanner/RifaBanner'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -17,6 +15,7 @@ export default function Home() {
       <Hero />
       <About />
       <Methods />
+      <RifaBanner />
     </>
   )
 }

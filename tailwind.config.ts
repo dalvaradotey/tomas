@@ -22,6 +22,9 @@ const config: Config = {
         'secondary': '#826AED',
         'third': '#EDE3E9',
         'fourth': '#FFCB47',
+        'fifth': '#F3DCBC',
+        'sixth': '#F7567C',
+        'seventh': '#F5D0FE'
       },
       keyframes: {
         'animate-bounce-right': {

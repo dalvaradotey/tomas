@@ -53,8 +53,8 @@ export default function RootLayout({
         </>
       )}
       <body className={clsx(['relative', 'scroll-smooth', inter.className])}>
-        {/*<Navbar />*/}
-        <main className="h-full">
+        <Navbar />
+        <main className="h-full mt-[-80px] md:mt-0">
           {children}
         </main>
         <Footer />

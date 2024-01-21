@@ -8,7 +8,7 @@ export default function Footer() {
         <li>
           <Link
             href="/"
-            className="hover:underline hover:decoration-pink-500 hover:underline-offset-8 hover:decoration-4"
+            className="hover:underline hover:decoration-secondary hover:underline-offset-8 hover:decoration-4"
           >
             Inicio
           </Link>
@@ -16,7 +16,7 @@ export default function Footer() {
         <li>
           <Link
             href="/duchenne"
-            className="hover:underline hover:decoration-pink-500 hover:underline-offset-8 hover:decoration-4"
+            className="hover:underline hover:decoration-secondary hover:underline-offset-8 hover:decoration-4"
           >
             ¿Qué es duchenne?
           </Link>
@@ -24,7 +24,7 @@ export default function Footer() {
         <li>
           <Link
             href="/testimonio"
-            className="hover:underline hover:decoration-pink-500 hover:underline-offset-8 hover:decoration-4"
+            className="hover:underline hover:decoration-secondary hover:underline-offset-8 hover:decoration-4"
           >
             Testimonio
           </Link>
@@ -32,7 +32,7 @@ export default function Footer() {
         <li>
           <Link
             href="/donar"
-            className="hover:underline hover:decoration-pink-500 hover:underline-offset-8 hover:decoration-4"
+            className="hover:underline hover:decoration-secondary hover:underline-offset-8 hover:decoration-4"
           >
             ¿Cómo donar?
           </Link>
@@ -40,7 +40,7 @@ export default function Footer() {
         <li>
           <Link
             href="/bases-legales-rifa"
-            className="hover:underline hover:decoration-pink-500 hover:underline-offset-8 hover:decoration-4"
+            className="hover:underline hover:decoration-secondary hover:underline-offset-8 hover:decoration-4"
           >
             Bases legales rifa
           </Link>
@@ -48,6 +48,7 @@ export default function Footer() {
       </ul>
       <p className="mb-4 text-gray-800 text-base font-thin">Apóyame en redes sociales</p>
       <SocialNetworks />
+      <p className="text-xs mt-4 text-gray-500">#TomasContraDuchenne</p>
     </section>
   )
 }
