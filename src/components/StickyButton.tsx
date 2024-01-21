@@ -1,5 +1,6 @@
 "use client"
 
+import useMobile from "@/hooks/useMobile";
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -8,6 +9,7 @@ import { useEffect, useState } from "react";
 export default function StickyButton() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const isMobile = useMobile();
   const pathname = usePathname()
 
   useEffect(() => {
@@ -26,7 +28,7 @@ export default function StickyButton() {
   return (
     <>
       {pathname !== '/donar' && (
-        <div className={clsx([isScrolled ? 'block' : 'hidden', 'fixed end-6 bottom-6 group'])} onClick={() => setIsOpen(!isOpen)}>
+        <div className={clsx([isScrolled && isMobile ? 'block' : 'hidden', 'fixed end-6 bottom-6 group'])} onClick={() => setIsOpen(!isOpen)}>
           <div id="speed-dial-menu-text-outside-button" className={clsx([isOpen ? '' : 'hidden'], 'bg-white shadow-lg text-third p-4 mb-4 rounded-xl space-y-2')}>
             <Link href="/donar" className="flex items-center text-primary font-bold">
               <svg className="w-6 h-6 text-secondary mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
