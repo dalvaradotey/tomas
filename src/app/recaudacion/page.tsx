@@ -31,7 +31,7 @@ export default function Recaudacion() {
         </div>
         <div className="mb-4">
           <p className="text-secondary text-2xl font-semibold">Meta recaudación</p>
-          <p className="text-4xl font-light">CLP $3.500.000.000</p>
+          <p className="text-4xl font-light">$3.500.000.000</p>
         </div>
         <div className="mb-4">
           <p className="text-secondary text-2xl font-semibold">Monto recaudado</p>

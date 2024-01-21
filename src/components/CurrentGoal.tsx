@@ -11,7 +11,7 @@ export default function CurrentGoal() {
           <span className="md:block hidden">Meta recaudación: CLP $3.500.000.000</span>
         </p>
         <p className="uppercase font-bold text-xs opacity-75">
-          <span className="md:block hidden">Monto recaudado: {goalsData?.currentAmount}</span>
+          <span className="md:block hidden">Monto recaudado: CLP {goalsData?.currentAmount}</span>
         </p>
         <p className="text-sm md:text-xs opacity-70 flex">
           <span className="md:block hidden">Actualización:&nbsp;</span>{goalsData?.currentDate}
