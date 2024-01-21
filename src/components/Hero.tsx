@@ -77,7 +77,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="my-3 mx-3">
+      <div className="my-3 mx-3 md:block hidden">
         <CurrentGoal />
       </div>
     </div>

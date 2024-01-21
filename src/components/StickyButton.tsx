@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export default function DonateButton() {
+export default function StickyButton() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const pathname = usePathname()
@@ -45,6 +45,12 @@ export default function DonateButton() {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
               </svg>
               <span className="">Ir a rifa</span>
+            </Link>
+            <Link href="/recaudacion" className="flex items-center text-primary font-bold">
+              <svg className="w-6 h-6 text-secondary mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+              </svg>
+              <span className="">Recaudación</span>
             </Link>
           </div>
           <button type="button" data-dial-toggle="speed-dial-menu-text-outside-button-square" aria-controls="speed-dial-menu-text-outside-button-square" aria-expanded="false" className="flex items-center justify-center text-white bg-gradient-to-r to-violet-500 from-indigo-600 rounded-full w-16 h-16 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-none">
