@@ -10,7 +10,7 @@ type Props = HTMLAttributes<HTMLDivElement> & {
 	onClose: () => void;
 };
 
-const activeMenu: string = 'underline decoration-pink-500 underline-offset-8 decoration-4';
+const activeMenu: string = 'underline decoration-secondary underline-offset-8 decoration-4';
 
 const Menu: FC<Props> = ({ onClose, className, ...rest }) => {
 	const pathname = usePathname()

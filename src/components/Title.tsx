@@ -1,5 +1,5 @@
 const Title = () => {
-  return <p className="text-teal-900 text-normal md:text-xl margin-0 padding-0"><span className="font-bold text-xl md:text-2xl">#</span>TomasContraDuchenne</p>;
+  return <p className="text-lg md:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-violet-500 from-indigo-900 z-[1000]">#TomasContraDuchenne</p>;
 };
 
 export default Title;

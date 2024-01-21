@@ -10,7 +10,7 @@ export default function Banner() {
 	const isMobile = useMobile();
  
 	return (
-		<div className="grid grid-col-1 md:grid-cols-5 bg-amber-50 text-amber-900 items-center overflow-hidden rounded-xl">
+		<div className="grid grid-col-1 md:grid-cols-5 bg-fifth text-amber-900 items-center overflow-hidden">
 			<div className="col-span-1 md:col-span-3 py-4 px-10 md:p-10">
 				<h3 className="text-2xl md:text-3xl mb-2 font-bold">
 					#TomasContraDuchenne
@@ -45,7 +45,7 @@ export default function Banner() {
 					</Link>
 					{!isMobile && (
 						<div className="flex flex-col border-l-2 border-amber-900 pl-6 gap-2">
-							<small className="text-xs">Sígueme en mis redes sociales</small>
+							<small className="text-xs">Sigue mis redes sociales</small>
 							<SocialNetworks />
 						</div>
 					)}

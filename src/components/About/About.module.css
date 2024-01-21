@@ -1,0 +1,20 @@
+.aboutContainer {
+  @apply md:h-screen md:flex items-center mt-32 md:mt-0;
+
+}
+
+.aboutContent {
+  @apply md:w-4/6 md:pr-28;
+
+  & h2 {
+    @apply text-4xl md:text-6xl;
+  }
+
+  & p {
+    @apply text-justify mt-4;
+  }
+}
+
+.aboutImage {
+  @apply w-full h-80 md:w-2/6 md:h-full relative md:justify-center;
+}

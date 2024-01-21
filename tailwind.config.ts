@@ -13,6 +13,28 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'lavender-blush': '#EDE3E9',
+        'slate-blue': '#826AED',
+        'persian-indigo': '#340068',
+        'sunglow': '#FFCB47',
+        'primary': '#340068',
+        'secondary': '#826AED',
+        'third': '#EDE3E9',
+        'fourth': '#FFCB47',
+        'fifth': '#F3DCBC',
+        'sixth': '#F7567C',
+        'seventh': '#F5D0FE'
+      },
+      keyframes: {
+        'animate-bounce-right': {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      },
+      animation: {
+        'animate-bounce-right': 'animate-bounce-right 1s ease-in-out infinite',
+      }
     },
   },
   plugins: [],

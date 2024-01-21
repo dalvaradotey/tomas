@@ -1,21 +1,20 @@
+import { goalsData } from '@/app/goals-data'
+
 export default function CurrentGoal() {
   return (
-    <div className="md:flex">
-      <div className="w-fit rounded-full border-4 border-pink-400 px-1.5 py-1 md:px-3 md:py-3 mr-3 md:mr-4">
-        <span className="text-xl font-bold">3%</span>
+    <div className="md:flex items-center py-12 px-10 md:px-0 md:py-2">
+      <div className="w-fit bg-fourth rounded-full border-4 border-white px-4 py-4 md:px-3 md:py-3 mr-3 md:mr-4 mb-3 md:mb-0">
+        <span className="text-2xl font-bold">{goalsData?.currentPercentage}</span>
       </div>
-      <div className="mt-2 md:mt-0">
-        <p className="text-lg text-pink-500 font-semibold md:hidden">Recaudación actualizada</p>
-        <p className="uppercase font-bold text-sm text-cyan-900 opacity-75">
+      <div className="">
+        <p className="uppercase font-bold text-xs opacity-75">
           <span className="md:block hidden">Meta recaudación: CLP $3.500.000.000</span>
-          <span className="md:hidden block">Meta: CLP $3.500.000.000</span>
         </p>
-        <p className="uppercase font-bold text-sm text-cyan-900 opacity-75">
-          <span className="md:block hidden">Monto recaudado: CLP $114.007.700</span>
-          <span className="md:hidden block">Recaudado: CLP $114.007.700</span>
+        <p className="uppercase font-bold text-xs opacity-75">
+          <span className="md:block hidden">Monto recaudado: CLP {goalsData?.currentAmount}</span>
         </p>
-        <p className="text-xs opacity-70 flex">
-          <span className="md:block hidden">Actualización:&nbsp;</span>30 diciembre 2023 - 12:13 hrs
+        <p className="text-sm md:text-xs opacity-70 flex">
+          <span className="md:block hidden">Actualización:&nbsp;</span>{goalsData?.currentDate}
         </p>
       </div>
     </div>

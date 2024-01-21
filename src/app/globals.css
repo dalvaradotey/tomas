@@ -5,3 +5,27 @@
 html {
 	scroll-behavior: smooth;
 }
+
+body {
+	@apply bg-third text-xl leading-9 text-primary font-light;
+}
+
+h1 {
+	@apply text-4xl md:text-5xl font-semibold;
+}
+
+h2 {
+	@apply text-3xl md:text-4xl font-bold text-secondary;
+}
+
+h3 {
+	@apply text-3xl font-extralight mb-8;
+}
+
+.container-box {
+	@apply md:py-48 md:px-40 px-8 py-20;
+}
+
+.banner-box {
+	@apply md:py-16 md:px-40 px-8 py-20;
+}
