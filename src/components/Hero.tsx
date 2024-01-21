@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="relative md:w-3/6 pt-10 md:pt-0">
             <div className="align-middle px-8 py-8 md:pl-20 md:pr-24 pt-24 md:pt-0">
               <span className="text-2xl md:text-2xl font-bold">Mi nombre es Tomás Ross.</span>
-              <h1 className="text-5xl md:text-5xl font-bold md:mt-2 bg-clip-text bg-gradient-to-r text-third opacity-90">Me diagnosticaron Duchenne.</h1>
+              <h1 className="text-4xl md:text-5xl font-bold md:mt-2 bg-clip-text bg-gradient-to-r text-third opacity-90">Me diagnosticaron Duchenne.</h1>
               <p className="mt-2 leading-9">Necesito tu ayuda para costear el medicamento más caro del mundo que cuesta 3.500 millones de pesos chilenos.</p>
               <div className="hidden md:flex mt-10">
                 <LinkButton href="#mi-historia">

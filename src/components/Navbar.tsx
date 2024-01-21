@@ -39,7 +39,7 @@ export default function Navbar() {
 				"sticky md:fixed top-4 w-full z-[2000]",
 			])}
 		>
-			<div className="mx-4 md:mx-32 bg-white m-auto rounded-[50px] flex justify-around md:justify-between p-6 gap-4 px-8">
+			<div className="mx-4 md:mx-32 bg-white m-auto rounded-[50px] flex justify-around md:justify-between py-6 md:px-8">
 				<Link href="/">
 					<Title />
 				</Link>
