@@ -46,7 +46,7 @@ export default function Footer() {
           </Link>
         </li>
       </ul>
-      <p className="mb-4 text-gray-800 text-base font-thin">Apóyame en redes sociales</p>
+      <p className="mb-4 text-gray-800 opacity-60 text-base font-light">Apóyame en redes sociales</p>
       <SocialNetworks />
       <p className="text-xs mt-4 text-gray-500">#TomasContraDuchenne</p>
     </section>

@@ -10,22 +10,22 @@ const NavbarHero = () => (
     <div className="w-3/5">
       <ul className="flex justify-end gap-6 items-center text-base">
         <li>
-          <Link href="/">
+          <Link href="/" className="font-semibold">
             Inicio
           </Link>
         </li>
         <li>
-          <Link href="/duchenne">
+          <Link href="/duchenne" className="font-semibold">
             ¿Qué es Duchenne?
           </Link>
         </li>
         <li>
-          <Link href="/testimonio">
+          <Link href="/testimonio" className="font-semibold">
             Testimonio
           </Link>
         </li>
         <li>
-          <LinkButton href="#mi-historia">
+          <LinkButton href="#mi-historia" className="font-semibold">
             <span className="ml-2">¿Cómo donar?</span>
           </LinkButton>
         </li>

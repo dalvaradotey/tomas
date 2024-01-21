@@ -4,7 +4,7 @@
   }
 
   & .headerContent {
-    @apply bg-fifth md:h-screen md:flex md:items-center md:h-full;
+    @apply bg-fifth md:h-screen md:flex md:items-center;
     
     & img {
       @apply object-cover w-full h-full min-w-full min-h-full;
@@ -15,7 +15,7 @@
     }
 
     & div:first-child + div {
-      @apply md:w-8/12;
+      @apply md:w-8/12 md:px-16 px-8 py-20;
     }
   }
 

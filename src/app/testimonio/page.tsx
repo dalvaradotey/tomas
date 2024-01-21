@@ -39,7 +39,7 @@ export default function Testimonio() {
             />
             <p className={style.photoText}>Foto: Alex, Tomás, Camila y Erwin</p>
           </div>
-          <div className="container-box">
+          <div>
             <h1>Somos Alex y Camila</h1>
             <h2 className="text-left">Padres de Tomás y Erwin</h2>
             <h3 className="mt-4">Este es nuestro testimonio</h3>
