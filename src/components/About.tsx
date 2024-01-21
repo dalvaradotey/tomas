@@ -17,10 +17,10 @@ export default function About() {
 	const handleOpenVideo = () => setIsOpen(true);
 
   return (
-    <div id="mi-historia" className="md:py-48 md:px-40 px-8 py-12 md:h-screen md:flex text-primary font-light">
+    <div id="mi-historia" className="md:py-48 md:px-40 px-8 py-12 md:h-screen md:flex">
       <div className="md:w-4/6 md:pr-28">
         <h2 className="text-6xl font-bold text-secondary">Mi historia</h2>
-        <p className="text-justify leading-9 mt-4">Mi nombre es <strong>Tomás Ross</strong>, tengo 5 años y hace algunos meses me diagnosticaron <strong>Distrofía Muscular de Duchenne</strong>, una enfermedad degenerativa que afectará significativamente mi movilidad a través del tiempo y reduce mi esperanza de vida a los 30 años. La buena noticia es que <strong>la FDA aprobó el primer medicamento</strong> de terapia genética para esta enfermedad, llamado <strong>Elevidys</strong>. ¿La mala noticia? El costo del tratamiento es <strong>3.500 millones de pesos chilenos</strong> y necesito administrarme antes de los 6 años.</p>
+        <p className="text-justify mt-4">Mi nombre es <strong>Tomás Ross</strong>, tengo 5 años y hace algunos meses me diagnosticaron <strong>Distrofía Muscular de Duchenne</strong>, una enfermedad degenerativa que afectará significativamente mi movilidad a través del tiempo y reduce mi esperanza de vida a los 30 años. La buena noticia es que <strong>la FDA aprobó el primer medicamento</strong> de terapia genética para esta enfermedad, llamado <strong>Elevidys</strong>. ¿La mala noticia? El costo del tratamiento es <strong>3.500 millones de pesos chilenos</strong> y necesito administrarme antes de los 6 años.</p>
         <div className="py-8">
           <LinkButton href="/testimonio" className="hidden md:flex items-center">
             <svg className="mt-[4px] w-6 h-6 text-secondary animate-[animate-bounce-right_1s_ease-in-out_infinite]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

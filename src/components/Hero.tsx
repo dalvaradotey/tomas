@@ -1,6 +1,3 @@
-'use client';
-
-import { useState } from "react";
 import CurrentGoal from "./CurrentGoal";
 import LinkButton from "./LinkButton";
 import Link from "next/link";
@@ -11,7 +8,7 @@ const NavbarHero = () => (
   <div className="hidden md:block md:flex w-full px-8 py-6 items-center">
     <p className="text-xl w-2/5 font-bold text-transparent bg-clip-text bg-gradient-to-r to-violet-500 from-indigo-900">#TomasContraDuchenne</p>
     <div className="w-3/5">
-      <ul className="flex justify-end gap-6 items-center">
+      <ul className="flex justify-end gap-6 items-center text-base">
         <li>
           <Link href="/">
             Inicio
@@ -39,7 +36,7 @@ const NavbarHero = () => (
 
 export default function Hero() {
   return (
-    <div className="md:h-screen text-primary md:px-32">
+    <div className="md:h-screen md:px-32">
       <div className="bg-secondary md:rounded-3xl md:mt-10 h-[80%] md:h-[80%]">
         <NavbarHero />
         <div className="md:flex md:items-center md:h-[80%]">
@@ -47,7 +44,7 @@ export default function Hero() {
             <div className="align-middle px-8 py-8 md:pl-20 md:pr-24 pt-24 md:pt-0">
               <span className="text-2xl md:text-2xl font-bold">Mi nombre es Tomás Ross.</span>
               <h1 className="text-5xl md:text-5xl font-bold md:mt-2 bg-clip-text bg-gradient-to-r text-third opacity-90">Me diagnosticaron Duchenne.</h1>
-              <p className="mt-2 text-2xl md:text-xl leading-9">Necesito tu ayuda para costear el medicamento más caro del mundo que cuesta 3.500 millones de pesos chilenos.</p>
+              <p className="mt-2 leading-9">Necesito tu ayuda para costear el medicamento más caro del mundo que cuesta 3.500 millones de pesos chilenos.</p>
               <div className="hidden md:flex mt-10">
                 <LinkButton href="#mi-historia">
                   <svg className="animate-bounce mt-2 w-4 h-4 md:w-6 md:h-6 text-secondary" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">

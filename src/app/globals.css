@@ -7,6 +7,5 @@ html {
 }
 
 body {
-	background-color: #EDE3E9;
-	@apply text-xl md:text-xl;
+	@apply bg-third text-xl leading-9 text-primary font-light;
 }

@@ -1,6 +1,4 @@
 .pageTestimony {
-  @apply text-primary text-2xl md:text-xl font-light;
-
   & h1 {
     @apply text-5xl font-semibold;
   }

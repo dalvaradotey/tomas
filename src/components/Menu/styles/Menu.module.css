@@ -1,5 +1,5 @@
 .nav {
-	@apply fixed top-0 left-0 w-full h-full z-10 pt-4 bg-white;
+	@apply fixed top-0 left-0 w-full h-full z-10 pt-4 bg-white text-base;
 
 	& li {
 		@apply text-center p-4 text-primary font-semibold;
