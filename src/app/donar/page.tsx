@@ -34,7 +34,7 @@ export default function Donar() {
         quality={100}
       />
       <div id="donar" className="px-8 py-12 md:py-48 md:px-40 text-primary">
-        <h2 className="text-secondary text-5xl md:text-5xl font-semibold text-center">
+        <h2 className="text-secondary text-4xl md:text-5xl font-semibold text-center">
           ¿Cómo donar?
         </h2>
         <p className="text-center font-extralight text-2xl md:text-3xl mt-6 mb-12">
