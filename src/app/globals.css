@@ -8,4 +8,5 @@ html {
 
 body {
 	background-color: #EDE3E9;
+	@apply text-xl md:text-xl;
 }
