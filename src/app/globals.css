@@ -21,3 +21,11 @@ h2 {
 h3 {
 	@apply text-3xl font-extralight mb-8;
 }
+
+.container-box {
+	@apply md:py-48 md:px-40 px-8 py-20;
+}
+
+.banner-box {
+	@apply md:py-16 md:px-40 px-8 py-20;
+}

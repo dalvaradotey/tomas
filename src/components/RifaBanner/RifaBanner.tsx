@@ -3,9 +3,10 @@ import LinkButton from "../LinkButton"
 import TomasRifa from "@public/tomas-rifa.jpg"
 import Link from "next/link"
 import style from "./style.module.css"
+import clsx from "clsx"
 
 export const RifaBanner = () => (
-  <div className={style?.rifaBanner}>
+  <div className={clsx(['banner-box', style?.rifaBanner])}>
     <div>
       <h2>Gran rifa solidaria por Tomás</h2>
       <h3>Participa y gana una parcela en Chiloé</h3>

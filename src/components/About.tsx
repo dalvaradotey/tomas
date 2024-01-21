@@ -17,7 +17,7 @@ export default function About() {
 	const handleOpenVideo = () => setIsOpen(true);
 
   return (
-    <div id="mi-historia" className="md:py-48 md:px-40 px-8 py-12 md:h-screen md:flex">
+    <div id="mi-historia" className="container-box md:h-screen md:flex items-center">
       <div className="md:w-4/6 md:pr-28">
         <h2 className="text-4xl md:text-6xl">Mi historia</h2>
         <p className="text-justify mt-4">Mi nombre es <strong>Tomás Ross</strong>, tengo 5 años y hace algunos meses me diagnosticaron <strong>Distrofía Muscular de Duchenne</strong>, una enfermedad degenerativa que afectará significativamente mi movilidad a través del tiempo y reduce mi esperanza de vida a los 30 años. La buena noticia es que <strong>la FDA aprobó el primer medicamento</strong> de terapia genética para esta enfermedad, llamado <strong>Elevidys</strong>. ¿La mala noticia? El costo del tratamiento es <strong>3.500 millones de pesos chilenos</strong> y necesito administrarme antes de los 6 años.</p>

@@ -5,7 +5,7 @@ import AidMethods from "./AidMethods";
 export default function Methods() {
 	return (
 		<>
-			<div id="donar" className="md:py-24 md:px-40 px-8 py-12">
+			<div id="donar" className="container-box">
 				<h2 className="text-4xl md:text-5xl font-bold text-center text-secondary">
 					¿Cómo donar?
 				</h2>
