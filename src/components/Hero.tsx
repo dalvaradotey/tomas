@@ -34,28 +34,33 @@ const NavbarHero = () => (
   </div>
 )
 
+const StoryButton = () => (
+  <LinkButton href="#mi-historia" className="absolute md:relative bottom-4">
+    <svg className="animate-bounce mt-2 w-4 h-4 md:w-6 md:h-6 text-secondary" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1v12m0 0 4-4m-4 4L1 9"></path>
+    </svg>
+    <span className="md:text-lg ml-2">Conoce mi historia</span>
+  </LinkButton>
+)
+
 export default function Hero() {
   return (
     <div className="md:h-screen md:px-32">
-      <div className="bg-secondary md:rounded-3xl md:mt-10 h-[80%] md:h-[80%]">
+      <div className="md:bg-secondary md:rounded-3xl md:mt-10 h-full md:h-[80%]">
+        <div className="md:hidden absolute bg-secondary z-0 w-full h-[13%]"></div>
         <NavbarHero />
-        <div className="md:flex md:items-center md:h-[80%]">
+        <div className="md:flex md:items-center md:h-[80%] z-10">
           <div className="relative md:w-3/6 pt-10 md:pt-0">
             <div className="align-middle px-8 py-8 md:pl-20 md:pr-24 pt-24 md:pt-0">
               <span className="text-2xl md:text-2xl font-bold">Mi nombre es Tomás Ross.</span>
               <h1 className="text-4xl md:text-5xl font-bold md:mt-2 bg-clip-text bg-gradient-to-r text-third opacity-90">Me diagnosticaron Duchenne.</h1>
               <p className="mt-2 leading-9">Necesito tu ayuda para costear el medicamento más caro del mundo que cuesta 3.500 millones de pesos chilenos.</p>
               <div className="hidden md:flex mt-10">
-                <LinkButton href="#mi-historia">
-                  <svg className="animate-bounce mt-2 w-4 h-4 md:w-6 md:h-6 text-secondary" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1v12m0 0 4-4m-4 4L1 9"></path>
-                  </svg>
-                  <span className="md:text-lg ml-2">Conoce mi historia</span>
-                </LinkButton>
+                <StoryButton />
               </div>
             </div>
           </div>
-          <div className="md:w-3/6 h-[500px] md:h-full px-8 md:px-8 md:pt-6">
+          <div className="md:w-3/6 md:h-full px-8 md:px-8 md:pt-6">
             <div className="relative h-full md:h-screen">
               <Image
                 src={TomasPaisaje}
@@ -65,12 +70,7 @@ export default function Hero() {
               />
               <div className="md:hidden absolute w-full">
                 <div className="relative mx-4">
-                  <LinkButton href="/testimonio" className="flex items-center absolute bottom-4">
-                    <svg className="mt-[4px] w-6 h-6 text-secondary animate-[animate-bounce-right_1s_ease-in-out_infinite]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-                    </svg>
-                    <span className="ml-2">Conoce mi testimonio</span>
-                  </LinkButton>
+                  <StoryButton />
                 </div>
               </div>
             </div>
