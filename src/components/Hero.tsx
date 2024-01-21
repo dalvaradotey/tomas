@@ -47,7 +47,7 @@ export default function Hero() {
   return (
     <div className="md:h-screen md:px-32">
       <div className="md:bg-secondary md:rounded-3xl md:mt-10 h-full md:h-[80%]">
-        <div className="md:hidden absolute bg-secondary z-0 w-full h-[13%]"></div>
+        <div className="md:hidden absolute bg-secondary z-0 w-full h-[14.7%]"></div>
         <NavbarHero />
         <div className="md:flex md:items-center md:h-[80%] z-10">
           <div className="relative md:w-3/6 pt-10 md:pt-0">
