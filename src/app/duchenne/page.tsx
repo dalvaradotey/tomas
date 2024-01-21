@@ -32,7 +32,7 @@ export default function Duchenne() {
         alt=""
         quality={100}
       />
-      <div className="p-8 md:py-36 md:px-40 space-y-10">
+      <div className="container-box space-y-10">
         <h1>Distrofia Muscular de Duchenne (DMD)</h1>
         <p>La Distrofia Muscular de Duchenne (DMD) es la distrofia muscular más común diagnosticada durante la infancia. Limita significativamente los años de vida de los afectados. Afecta a 1 de cada 5.000 niños en el mundo (alrededor de 20.000 casos nuevos cada año).</p>
         <p>Es un desorden progresivo del músculo que causa la pérdida de su función y por lo tanto los afectados terminan perdiendo totalmente su independencia. La enfermedad es causada por una mutación en el gen que codifica la distrofina. Debido a que la distrofina está ausente, las células musculares se dañan fácilmente. </p>

@@ -32,7 +32,7 @@ export default function BasesRifaParcela() {
         alt=""
         quality={100}
       />
-      <div className="text-primary p-8 md:py-36 md:px-40 space-y-10">
+      <div className="container-box text-primary space-y-10">
         <h1>Bases Concurso &ldquo;Gana una Parcela en Chiloé&rdquo;</h1>
         <div className="grid gap-12">
           <div>

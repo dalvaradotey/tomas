@@ -15,12 +15,12 @@
     }
 
     & div:first-child + div {
-      @apply md:w-8/12 px-6 py-12 md:px-20 md:py-10;
+      @apply md:w-8/12;
     }
   }
 
   & .content {
-    @apply px-6 py-12 md:px-40 md:py-48 md:grid md:gap-36 mt-24 md:mt-0;
+    @apply md:grid md:gap-36;
   }
 
   & .photoText {

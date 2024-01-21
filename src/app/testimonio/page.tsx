@@ -4,6 +4,7 @@ import Elevidys from '@public/elevidys.png'
 import Banner from '@/components/Banner';
 import style from './style.module.css';
 import { Metadata } from 'next';
+import clsx from 'clsx';
 
 export const metadata: Metadata = {
   title: 'Nuestro Testimonio | Tomas contra Duchenne',
@@ -38,14 +39,14 @@ export default function Testimonio() {
             />
             <p className={style.photoText}>Foto: Alex, Tomás, Camila y Erwin</p>
           </div>
-          <div>
+          <div className="container-box">
             <h1>Somos Alex y Camila</h1>
             <h2 className="text-left">Padres de Tomás y Erwin</h2>
             <h3 className="mt-4">Este es nuestro testimonio</h3>
             <p><strong>Tomás es nuestro hijo mayor de 5 años</strong>, nació en el año 2018 sin ninguna complicación, fue cumpliendo sus etapas del desarrollo de forma normal y con muy buena salud. Alrededor de los 3 años y medio desde el colegio <strong>nos derivaron a terapeuta ocupacional por algunos problemas motores</strong> que pesquisaron al compararlo con los demás niños y fue el Terapeuta quien luego de su evaluación <strong>nos dijo que tenía un retraso motor severo según la puntuación de sus escalas</strong>, así que iniciamos sesiones de terapia ocupacional para nivelar su retraso, pero al pasar los meses no vimos avances y es en ese momento en donde partió nuestra preocupación.</p>
           </div>
         </div>
-        <div className={style?.content}>
+        <div className={clsx(['container-box', style?.content])}>
           <div className="mb-28 md:mb-0">
             <h3>Se confirma el diagnóstico de DMD</h3>
             <p>Lo llevamos a <strong>un Traumatólogo infantil</strong> quien luego de su examen físico y exámenes de sangre <strong>nos dijo que Tomás tenía Distrofia Muscular de Duchenne (DMD)</strong> pero que este diagnóstico debía ser confirmado con un examen genético y que <strong>su evaluación debía continuar con la especialidad de Neurología</strong>.</p>
