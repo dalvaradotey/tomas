@@ -6,8 +6,8 @@
 
 .dialog {
 	width: 350px;
-	aspect-ratio: 3/8;
-	@apply z-50 bg-transparent md:mt-[60%];
+	//aspect-ratio: 3/8;
+	@apply z-50 bg-transparent;
 
 	&:not(.video) {
 		width: min(90vw, 500px);
