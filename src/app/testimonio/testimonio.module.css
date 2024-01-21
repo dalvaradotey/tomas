@@ -24,7 +24,7 @@
   }
 
   & .photoText {
-    @apply text-sm text-center text-gray-500 absolute bottom-0 bg-white p-1;
+    @apply hidden md:block text-sm text-center text-gray-500 absolute bottom-0 bg-white p-1;
   }
 
   & .blockquote {
