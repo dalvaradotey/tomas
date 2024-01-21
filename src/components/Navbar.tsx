@@ -36,7 +36,7 @@ export default function Navbar() {
 		<nav
 			className={clsx([
 				isScrolled || isMobile || pathname !== '/' ? "block" : "hidden",
-				"sticky md:fixed top-4 w-full z-[2000]",
+				"sticky md:fixed top-4 w-full z-[40]",
 			])}
 		>
 			<div className="mx-4 md:mx-32 bg-white m-auto rounded-[50px] flex justify-around md:justify-between py-6 md:px-8">
