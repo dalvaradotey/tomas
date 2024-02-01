@@ -1,5 +1,5 @@
 export const goalsData = {
-  currentAmount: '$114.007.700',
-  currentPercentage: '3%',
-  currentDate: '30 diciembre 2023 - 12:13 hrs',
+  currentAmount: '$172.579.202',
+  currentPercentage: '5%',
+  currentDate: '01 febrero 2024 - 14:13 hrs',
 }
