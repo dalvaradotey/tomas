@@ -3,7 +3,7 @@
 import useMobile from "@/hooks/useMobile";
 import Image from "next/image";
 import Link from "next/link";
-import TomasPNG from "../../public/tomas.png";
+import TomasPNG from "@public/tomas.png";
 import SocialNetworks from "./SocialNetworks/SocialNetworks";
 
 export default function Banner() {

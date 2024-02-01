@@ -1,7 +1,7 @@
-import About from '@/components/About/About'
-import Hero from '@/components/Hero'
-import Methods from '@/components/Methods/Methods'
-import RifaBanner from '@/components/RifaBanner/RifaBanner'
+import About from '@/app/[lang]/components/About/About'
+import Hero from '@/app/[lang]/components/Hero'
+import Methods from '@/app/[lang]/components/Methods/Methods'
+import RifaBanner from '@/app/[lang]/components/RifaBanner/RifaBanner'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {

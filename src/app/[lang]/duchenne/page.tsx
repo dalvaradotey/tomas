@@ -1,4 +1,4 @@
-import Banner from "@/components/Banner";
+import Banner from "@/app/[lang]/components/Banner";
 import { Metadata } from "next";
 import DuchenneImage from "@public/duchenne.png";
 import Image from "next/image";

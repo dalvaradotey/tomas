@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import TomasFamiliaNieve from '@public/tomas-familia-nieve.jpg'
 import Elevidys from '@public/elevidys.png'
-import Banner from '@/components/Banner';
+import Banner from '@/app/[lang]/components/Banner';
 import style from './testimonio.module.css';
 import { Metadata } from 'next';
 import clsx from 'clsx';

@@ -22,6 +22,7 @@ export default function Navbar() {
 	useEffect(() => {
 		const handleScroll = () => {
 			const scrollY = window.scrollY;
+
 			if (scrollY > 700) {
 				setIsScrolled(true);
 			} else {
@@ -35,7 +36,7 @@ export default function Navbar() {
 	return (
 		<nav
 			className={clsx([
-				isScrolled || isMobile || pathname !== '/' ? "block" : "hidden",
+				isScrolled || isMobile || !['/', '/en'].includes(pathname) ? "block" : "hidden",
 				"sticky md:fixed top-4 w-full z-[40]",
 			])}
 		>

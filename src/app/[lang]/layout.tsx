@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar'
+import Navbar from '@/app/[lang]/components/Navbar'
 import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -6,8 +6,10 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './globals.css'
 import Script from 'next/script'
-import Footer from '@/components/Footer'
-import StickyButton from '@/components/StickyButton'
+import Footer from '@/app/[lang]/components/Footer'
+import StickyButton from '@/app/[lang]/components/StickyButton'
+import { Locale, i18n } from '@/i18n.config'
+import SettingsProvider from '@/context/SettingsContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,9 +36,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
+  params: { lang: Locale }
 }) {
+  console.log('PARAMS => ', params.lang);
   return (
     <html lang="es">
       {process.env.ENVIRONMENT === 'production' && (
@@ -53,13 +58,15 @@ export default function RootLayout({
         </>
       )}
       <body className={clsx(['relative', 'scroll-smooth', inter.className])}>
-        <Navbar />
-        <main className="h-full mt-[-76px] md:mt-0">
-          {children}
-        </main>
-        <Footer />
-        <StickyButton />
-				<ToastContainer />
+        <SettingsProvider>
+          <Navbar />
+          <main className="h-full mt-[-76px] md:mt-0">
+            {children}
+          </main>
+          <Footer />
+          <StickyButton />
+          <ToastContainer />
+        </SettingsProvider>
       </body>
     </html>
   )

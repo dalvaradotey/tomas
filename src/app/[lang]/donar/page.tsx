@@ -1,5 +1,5 @@
-import AidMethodsSection from "@/components/AidMethodsSection";
-import Banner from "@/components/Banner";
+import AidMethodsSection from "@/app/[lang]/components/AidMethodsSection";
+import Banner from "@/app/[lang]/components/Banner";
 import { Metadata } from "next";
 import Image from "next/image";
 import TomasTeleton from "@public/tomas-teleton.jpg";

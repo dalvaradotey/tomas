@@ -1,38 +1,52 @@
+"use client"
+
 import CurrentGoal from "./CurrentGoal";
 import LinkButton from "./LinkButton";
 import Link from "next/link";
 import Image from "next/image";
 import TomasPaisaje from "@public/tomas-paisaje.jpg";
+import { useContext } from "react";
+import { SettingsContext } from "@/context/SettingsContext";
+import LinkContextButton from "./LinkContextButton";
 
-const NavbarHero = () => (
-  <div className="hidden md:block md:flex w-full px-8 py-6 items-center">
-    <p className="text-xl w-2/5 font-bold text-transparent bg-clip-text bg-gradient-to-r to-violet-500 from-indigo-900">#TomasContraDuchenne</p>
-    <div className="w-3/5">
-      <ul className="flex justify-end gap-6 items-center text-base">
-        <li>
-          <Link href="/" className="font-semibold">
-            Inicio
-          </Link>
-        </li>
-        <li>
-          <Link href="/duchenne" className="font-semibold">
-            ¿Qué es Duchenne?
-          </Link>
-        </li>
-        <li>
-          <Link href="/testimonio" className="font-semibold">
-            Testimonio
-          </Link>
-        </li>
-        <li>
-          <LinkButton href="#mi-historia" className="font-semibold">
-            <span className="ml-2">¿Cómo donar?</span>
-          </LinkButton>
-        </li>
-      </ul>
+const NavbarHero = () => {
+  const context = useContext(SettingsContext);
+
+  return (
+    <div className="hidden md:block md:flex w-full px-8 py-6 items-center">
+      <p className="text-xl w-2/5 font-bold text-transparent bg-clip-text bg-gradient-to-r to-violet-500 from-indigo-900">#TomasContraDuchenne</p>
+      <div className="w-3/5">
+        <ul className="flex justify-end gap-6 items-center text-base">
+          <li>
+            <LinkContextButton page="" className="font-semibold">
+              Inicio
+            </LinkContextButton>
+          </li>
+          <li>
+            <Link href={'/duchenne'} className="font-semibold">
+              ¿Qué es Duchenne?
+            </Link>
+          </li>
+          <li>
+            <Link href={'/testimonio'} className="font-semibold">
+              Testimonio
+            </Link>
+          </li>
+          <li>
+            <LinkButton href="#mi-historia" className="font-semibold">
+              <span className="ml-2">¿Cómo donar?</span>
+            </LinkButton>
+          </li>
+          <li>
+            <button onClick={() => context.setLang('es')}>ES</button>
+            <button onClick={() => context.setLang('en')}>EN</button>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-)
+  )
+}
+
 
 const StoryButton = () => (
   <LinkButton href="#mi-historia" className="absolute md:relative bottom-4">
