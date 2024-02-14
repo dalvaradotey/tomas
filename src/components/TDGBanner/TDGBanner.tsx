@@ -26,7 +26,7 @@ export const TDGBanner = () => (
     <div className="md:py-3 md:px-40 px-8 py-8 bg-[#282232] text-white md:flex gap-8 items-center">
       <p className="text-amber-400 text-base font-semibold rounded-full border-amber-400 border-2 md:px-3 md:py-1 py-3 text-center md:text-left">Jueves 22</p>
       <p className="font-semibold md:text-xl text-3xl py-8 md:py-0">Gepe - Julius Popper - Arremacho - <span className="text-amber-400">Entre otros</span></p>
-      <a href="" className="bg-[#39344c] text-lg py-4 md:py-2 md:px-6 font-normal rounded-lg block text-center">Compra tu entrada aquí</a>
+      <a href="https://www.passline.com/sitio/tdgaviotas" target="_blank" className="bg-[#39344c] text-lg py-4 md:py-2 md:px-6 font-normal rounded-lg block text-center">Compra tu entrada aquí</a>
       <Image
         src={PasslineLogo}
         alt=""
