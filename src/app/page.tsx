@@ -2,6 +2,7 @@ import About from '@/components/About/About'
 import Hero from '@/components/Hero'
 import Methods from '@/components/Methods/Methods'
 import RifaBanner from '@/components/RifaBanner/RifaBanner'
+import TDGBanner from '@/components/TDGBanner/TDGBanner'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <Methods />
+      <TDGBanner />
       <RifaBanner />
     </>
   )
