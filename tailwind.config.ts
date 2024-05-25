@@ -17,6 +17,8 @@ const config: Config = {
         'lavender-blush': '#EDE3E9',
         'slate-blue': '#826AED',
         'persian-indigo': '#340068',
+        'success': '#34d399',
+        'success-font': '#064e3b',
         'sunglow': '#FFCB47',
         'primary': '#340068',
         'secondary': '#826AED',
