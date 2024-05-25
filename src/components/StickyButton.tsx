@@ -30,7 +30,7 @@ export default function StickyButton() {
       {pathname !== '/donar' && (
         <div className={clsx([isScrolled && isMobile ? 'block' : 'hidden', 'fixed end-6 bottom-6 group'])} onClick={() => setIsOpen(!isOpen)}>
           <div id="speed-dial-menu-text-outside-button" className={clsx([isOpen ? '' : 'hidden'], 'bg-white shadow-lg text-third p-4 mb-4 rounded-xl space-y-2')}>
-            <Link href="/donar" className="flex items-center text-primary font-bold">
+            <Link href="/" className="flex items-center text-primary font-bold">
               <svg className="w-6 h-6 text-secondary mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
               </svg>
@@ -42,12 +42,12 @@ export default function StickyButton() {
               </svg>
               <span className="">¿Cómo donar?</span>
             </Link>
-            <Link href="/donar" className="flex items-center text-primary font-bold">
+            <a target="_blank" href="https://www.tomascontraduchenne.com/parcelachiloe" className="flex items-center text-primary font-bold">
               <svg className="w-6 h-6 text-secondary mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
               </svg>
               <span className="">Ir a rifa</span>
-            </Link>
+            </a>
             <Link href="/recaudacion" className="flex items-center text-primary font-bold">
               <svg className="w-6 h-6 text-secondary mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
