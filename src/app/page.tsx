@@ -1,5 +1,6 @@
 import About from '@/components/About/About'
 import Hero from '@/components/Hero'
+import HomeContainer from '@/components/HomeContainer'
 import Methods from '@/components/Methods/Methods'
 import RifaBanner from '@/components/RifaBanner/RifaBanner'
 import TDGBanner from '@/components/TDGBanner/TDGBanner'
@@ -11,13 +12,5 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-  return (
-    <>
-      <Hero />
-      <About />
-      <Methods />
-      <TDGBanner />
-      <RifaBanner />
-    </>
-  )
+  return <HomeContainer />
 }
