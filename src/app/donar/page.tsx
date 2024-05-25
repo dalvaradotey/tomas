@@ -3,6 +3,7 @@ import Banner from "@/components/Banner";
 import { Metadata } from "next";
 import Image from "next/image";
 import TomasTeleton from "@public/tomas-teleton.jpg";
+import DonarContainer from "@/components/DonarContainer";
 
 export const metadata: Metadata = {
   title: '¿Cómo donar? | Tomas contra Duchenne',
@@ -25,26 +26,5 @@ export const metadata: Metadata = {
 }
 
 export default function Donar() {
-  return (
-    <>
-      <Image
-        src={TomasTeleton}
-        className="object-cover md:hidden"
-        alt=""
-        quality={100}
-      />
-      <div id="donar" className="px-8 py-12 md:py-48 md:px-40 text-primary">
-        <h2 className="text-secondary text-4xl md:text-5xl font-semibold text-center">
-          ¿Cómo donar?
-        </h2>
-        <p className="text-center font-extralight text-2xl md:text-3xl mt-6 mb-12">
-          Puedes donar seleccionando cualquiera de estos métodos:
-        </p>
-        <AidMethodsSection />
-      </div>
-      <div className="mt-10">
-        <Banner />
-      </div>
-    </>
-  )
+  return <DonarContainer />
 }

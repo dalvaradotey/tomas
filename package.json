@@ -13,6 +13,7 @@
     "next": "14.0.2",
     "next-elfsight-widget": "^1.1.1",
     "react": "^18",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18",
     "react-toastify": "^9.1.3"
   },
